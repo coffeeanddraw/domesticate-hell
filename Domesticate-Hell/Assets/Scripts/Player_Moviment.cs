@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMoviment : MonoBehaviour
+public class Player_Moviment : MonoBehaviour
 {
     [SerializeField]float runSpeed = 40f;
 
     float horizontalMove = 0f;
+    float verticalMove = 0f;
     bool jump = false;
     bool crouch = false;
     Rigidbody2D playerRB;
@@ -21,20 +22,7 @@ public class PlayerMoviment : MonoBehaviour
     {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
-
-        if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        }
-        else if (Input.GetButtonUp("Crouch"))
-        {
-            crouch = false;
-        }
+        verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
 
     }
 
