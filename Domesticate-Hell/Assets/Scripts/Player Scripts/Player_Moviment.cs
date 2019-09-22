@@ -8,8 +8,6 @@ public class Player_Moviment : MonoBehaviour
 
     float horizontalMove = 0f;
     float verticalMove = 0f;
-    bool jump = false;
-    bool crouch = false;
     Rigidbody2D playerRB;
 
     void Start()

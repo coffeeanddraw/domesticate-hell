@@ -4,13 +4,33 @@ using UnityEngine;
 
 public class Player_Interaction : MonoBehaviour
 {
-    [SerializeField] private GameObject currentObject;
+    [SerializeField] private GameObject currentInterObject = null;
+    private Interactive_Object currentInterObjectScritp = null;
+    public Inventory inventory;
 
-    private void Update()
+    void Update()
     {
-        if (Input.GetButtonDown("Interact") && currentObject)
+        if (Input.GetButtonDown("Interact") && currentInterObject)
         {
-            currentObject.SendMessage("doInteraction");
+            if (currentInterObjectScritp.inventory_bool)
+            {
+                inventory.addAnyItemToInventory(currentInterObject);
+            }
+
+            if (currentInterObjectScritp.animal_bool)
+            {
+                inventory.removeFirstFoodFromTheInventory();
+            }
+        }
+
+        if(Input.GetButtonDown("Interact") && currentInterObjectScritp.computer_bool)
+        {
+            currentInterObject.SendMessage("doInteraction");
+        }
+
+        if (Input.GetButtonDown("CloseInventory"))
+        {
+            currentInterObjectScritp.inventory.SetActive(false);
         }
     }
 
@@ -18,17 +38,35 @@ public class Player_Interaction : MonoBehaviour
     {
         if (other.CompareTag("Item"))
         {
-            Debug.Log("other.name");
-            currentObject = other.gameObject;
+            Debug.Log("Item");
+            currentInterObject = other.gameObject;
+            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+        }
+        else if (other.CompareTag("Food"))
+        {
+            Debug.Log("Food");
+            currentInterObject = other.gameObject;
+            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+        }
+        else if (other.CompareTag("Animal"))
+        {
+            Debug.Log("Animal");
+            currentInterObject = other.gameObject;
+            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+        }
+        else if (other.CompareTag("Computer"))
+        {
+            Debug.Log("Computer");
+            currentInterObject = other.gameObject;
+            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Item"))
+        if (other.CompareTag("Item") || other.CompareTag("Food") || other.CompareTag("Animal"))
         {
-            currentObject = null;
+            currentInterObject = null;
         }
     }
-
 }
