@@ -4,27 +4,47 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public List<GameObject> inventoryItem = new List<GameObject>();
-    public List<GameObject> inventoryFood = new List<GameObject>();
+    #region Singleton
+    internal static Inventory instance;
 
-    public void addAnyItemToInventory(GameObject other)
+    void Awake()
     {
-        if (other.CompareTag("Item"))
+        instance = this;   
+    }
+    #endregion
+
+    public int space = 16;  // Amount of item spaces
+
+    // Our current list of items in the inventory
+    public List<GameObject> items = new List<GameObject>();
+
+    public delegate void OnItemChanged();
+    public OnItemChanged onItemChangedCallback;
+
+    // Add a new item if enough room
+    public void Add(GameObject item)
+    {
+        if (items.Count >= space)
         {
-            inventoryItem.Add(other);
-            Debug.Log("Item Added");
-            other.SendMessage("doInteraction");
+            Debug.Log("Not enough room.");
+            return;
         }
-        else if (other.CompareTag("Food"))
-        {
-            inventoryFood.Add(other);
-            Debug.Log("Item Added");
-            other.SendMessage("doInteraction");
-        }        
+
+        items.Add(item);
+
+        if (onItemChangedCallback != null)
+            onItemChangedCallback.Invoke();
+
+        
+        item.SendMessage("DoInteraction");
     }
 
-    public void removeFirstFoodFromTheInventory()
+    // Remove an item
+    public void Remove(GameObject item)
     {
-        inventoryFood.RemoveAt(0);
+        items.Remove(item);
+
+        if (onItemChangedCallback != null)
+            onItemChangedCallback.Invoke();
     }
 }

@@ -4,69 +4,88 @@ using UnityEngine;
 
 public class Player_Interaction : MonoBehaviour
 {
-    [SerializeField] private GameObject currentInterObject = null;
-    private Interactive_Object currentInterObjectScritp = null;
+    public GameObject currentInteractionObject = null;
+    public InteractionObject currentInteractionScript = null;
     public Inventory inventory;
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact") && currentInterObject)
+        if (Input.GetButtonDown("Interact") && currentInteractionObject)
         {
-            if (currentInterObjectScritp.inventory_bool)
+            if (currentInteractionScript.invetory)
             {
-                inventory.addAnyItemToInventory(currentInterObject);
+                inventory.Add(currentInteractionObject);
             }
 
-            if (currentInterObjectScritp.animal_bool)
+            if (currentInteractionScript.CanOpenInventory)
             {
-                inventory.removeFirstFoodFromTheInventory();
+                currentInteractionObject.SendMessage("EnableCanvas");
             }
         }
 
-        if(Input.GetButtonDown("Interact") && currentInterObjectScritp.computer_bool)
+        if (Input.GetButtonDown("Cancel"))
         {
-            currentInterObject.SendMessage("doInteraction");
-        }
-
-        if (Input.GetButtonDown("CloseInventory"))
-        {
-            currentInterObjectScritp.inventory.SetActive(false);
+            currentInteractionScript.SendMessage("DisableCanvas");
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D x)
     {
-        if (other.CompareTag("Item"))
+        if (x.CompareTag("Food"))
         {
-            Debug.Log("Item");
-            currentInterObject = other.gameObject;
-            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+            Debug.Log(x.name);
+            currentInteractionObject = x.gameObject;
+            currentInteractionScript = currentInteractionObject.GetComponent<InteractionObject>();
         }
-        else if (other.CompareTag("Food"))
+        else if (x.CompareTag("Item"))
         {
-            Debug.Log("Food");
-            currentInterObject = other.gameObject;
-            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+            Debug.Log(x.name);
+            currentInteractionObject = x.gameObject;
+            currentInteractionScript = currentInteractionObject.GetComponent<InteractionObject>();
         }
-        else if (other.CompareTag("Animal"))
+        else if (x.CompareTag("Animal"))
         {
-            Debug.Log("Animal");
-            currentInterObject = other.gameObject;
-            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+            Debug.Log(x.name);
+            currentInteractionObject = x.gameObject;
+            currentInteractionScript = currentInteractionObject.GetComponent<InteractionObject>();
         }
-        else if (other.CompareTag("Computer"))
+        else if (x.CompareTag("AI"))
         {
-            Debug.Log("Computer");
-            currentInterObject = other.gameObject;
-            currentInterObjectScritp = currentInterObject.GetComponent<Interactive_Object>();
+            Debug.Log(x.name);
+            currentInteractionObject = x.gameObject;
+            currentInteractionScript = currentInteractionObject.GetComponent<InteractionObject>();
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D x)
     {
-        if (other.CompareTag("Item") || other.CompareTag("Food") || other.CompareTag("Animal"))
+        if (x.CompareTag("Food"))
         {
-            currentInterObject = null;
+            if (x.gameObject == currentInteractionObject)
+            {
+                currentInteractionObject = null;
+            }
+        }
+        else if (x.CompareTag("Item"))
+        {
+            if (x.gameObject == currentInteractionObject)
+            {
+                currentInteractionObject = null;
+            }
+        }
+        else if (x.CompareTag("Animal"))
+        {
+            if (x.gameObject == currentInteractionObject)
+            {
+                currentInteractionObject = null;
+            }
+        }
+        else if (x.CompareTag("AI"))
+        {
+            if (x.gameObject == currentInteractionObject)
+            {
+                currentInteractionObject = null;
+            }
         }
     }
 }
