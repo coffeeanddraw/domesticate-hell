@@ -1,12 +1,27 @@
 # DOMESTICATE HELL: DESIGN PROCESS JOURNAL 
 
-Domesticate Hell's design process journal records the process of devloping the game, along with design/development decisions made during the process. 
+This design process journal serves as a record of the development process of the game. 
 
-This game is created as a part of Columbia College Chiago's '19-'20 indie game development capstone project. 
+*Domesticate Hell* is created as a part of Columbia College Chiago's '19-'20 indie game development capstone project. 
 
-Collaborators: J (Cattatonicat), Val, Ishan, Rob, Caleb, and Angelo. 
+Team Members: J (Cattatonicat), Val, Ishan, Rob, Caleb, and Angelo. 
 
-## Journal Entry # 1 
+## Week 1 Journal Entry
+
+During the first week of development, our team spent time brainstorming and making sure we are all on the same page regarding what kind of game *Domesticate Hell* will be. Spending some time discussing in person has helped us figure out our team dynamics and suitable roles for each member of the team. 
+
+![White Board Brainstorming](Images/whiteboard-1.png)
+
+We decided on a 2 dimenstional sideview game, and chose our primary references: Oxygen Not Included & Fallout Shelter. 
+
+**Angelo** will be taking care of programming 
+**Caleb** will be taking care of sound and music
+**Valhalla** will be taking care of character development 
+**Rob** Will be taking care of environmental art 
+**Ishan** Will be taking care of UI/UX
+and last but not least, **J** (myself) will be taking care of game design and documentation alongside portion of art assets
+
+## Week 2 Journal Entry
 
 Our team decided on 4 different types of habitats (Fire / Shadow / Electricity / Alchemy) for corresponding 4 types of pets. 
 Among the four habitats, the Fire habitat is the cheapest and the Alchemy habitat is the most expensive.
@@ -19,4 +34,5 @@ At this phase, Angelo, the programmer of the team is working on an inventory and
 Valhalla, character designer, has written an outline of the backstory of the player, and 4 different types of pets: Golem Tiger (Fire), Shadow Wolf (Shadow), Lightning Bun (Electricity), Magic Fish (Alchemy). 
 
 Rob, environment artist, is working on illustrating the 4 habitats as well as the background that will be laid beneath the habitat sprites. 
+
 
