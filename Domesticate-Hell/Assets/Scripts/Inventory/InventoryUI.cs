@@ -13,26 +13,30 @@ public class InventoryUI : MonoBehaviour
         inventory.onItemChangedCallback += UpdateUI;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateUI();
-    }
+    //void Update()
+    //{
+    //    //UpdateUI();
+    //}
 
-    void UpdateUI()
+    public void UpdateUI()
     {
+        Debug.Log("UPDATING UI");
         InventorySlot[] slots = GetComponentsInChildren<InventorySlot>();
 
         for (int i = 0; i < slots.Length; i++)
         {
+            //Debug.Log(inventory.items.Count);
+
             if (i < inventory.items.Count)
             {
                 slots[i].AddItem(inventory.items[i]);
+                Debug.Log("TEst1");
             }
-            else
-            {
-                slots[i].ClearSlot();
-            }
+            //else
+            //{
+            //    Debug.Log("TEst2");
+            //    slots[i].ClearSlot();
+            //}
         }
     }
 }

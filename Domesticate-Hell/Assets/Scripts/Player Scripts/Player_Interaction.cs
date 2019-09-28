@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_Interaction : MonoBehaviour
 {
+    public GameObject InventoryUI;
     public GameObject currentInteractionObject = null;
     public InteractionObject currentInteractionScript = null;
     public Inventory inventory;
@@ -19,6 +20,7 @@ public class Player_Interaction : MonoBehaviour
 
             if (currentInteractionScript.CanOpenInventory)
             {
+                InventoryUI.gameObject.GetComponent<InventoryUI>().UpdateUI();
                 currentInteractionObject.SendMessage("EnableCanvas");
             }
         }
