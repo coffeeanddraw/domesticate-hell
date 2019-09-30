@@ -9,6 +9,7 @@ TagManager:
   - Inventory
   - Animal
   - Computer
+  - Floor
   layers:
   - Default
   - TransparentFX

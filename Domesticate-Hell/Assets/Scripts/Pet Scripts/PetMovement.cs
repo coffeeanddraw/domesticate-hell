@@ -20,7 +20,6 @@ public class PetMovement : MonoBehaviour
 
     private float timer;
     private int direction = 1;
-    private bool collision = false;
 
     void Start()
     {
@@ -39,7 +38,7 @@ public class PetMovement : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        if (timer < 0 || collision)
+        if (timer < 0)
         {
             direction = -direction;
             timer = changeTime;
@@ -47,8 +46,9 @@ public class PetMovement : MonoBehaviour
 
         Vector2 position = rgbd2D.position;
 
-        position.x = position.x + Time.deltaTime * speed;
+        position.x = position.x + Time.deltaTime * speed * direction;
 
         rgbd2D.MovePosition(position);
     }
+
 }
