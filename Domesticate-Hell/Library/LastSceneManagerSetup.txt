@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scenes/TitleScreen.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
