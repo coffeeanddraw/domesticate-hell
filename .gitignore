@@ -7,3 +7,5 @@ Domesticate-Hell/Temp/UnityLockfile
 *.ide-shm
 *.ide-shm
 *.ide-wal
+*.ide-shm
+*.ide-wal
