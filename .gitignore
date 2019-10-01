@@ -8,3 +8,5 @@ Domesticate-Hell/.vs/Domesticate-Hell/v15/Server/sqlite3/storage.ide-wal
 Domesticate-Hell/Library/shadercompiler-UnityShaderCompiler.exe0.log
 *.ide-shm
 *.ide-wal
+*.ide-shm
+*.ide-wal
