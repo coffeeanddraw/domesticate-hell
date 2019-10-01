@@ -267,3 +267,7 @@ C:\Users\Angelo\Desktop\DomesticateHellGitHub\domesticate-hell\Domesticate-Hell\
 C:\Users\Angelo\Desktop\DomesticateHellGitHub\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Angelo\Desktop\DomesticateHellGitHub\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.dll
 C:\Users\Angelo\Desktop\DomesticateHellGitHub\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.pdb
+C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.dll
+C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.pdb

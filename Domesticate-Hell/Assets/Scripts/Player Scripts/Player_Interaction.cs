@@ -13,21 +13,12 @@ public class Player_Interaction : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && currentInteractionObject)
         {
-            if (currentInteractionScript.invetory)
-            {
-                inventory.Add(currentInteractionObject);
-            }
-
-            if (currentInteractionScript.CanOpenInventory)
-            {
-                InventoryUI.gameObject.GetComponent<InventoryUI>().UpdateUI();
-                currentInteractionObject.SendMessage("EnableCanvas");
-            }
+            currentInteractionScript.DoInteraction(currentInteractionObject);
         }
 
         if (Input.GetButtonDown("Cancel"))
         {
-            currentInteractionScript.SendMessage("DisableCanvas");
+            currentInteractionScript.HideCanvas();
         }
     }
 

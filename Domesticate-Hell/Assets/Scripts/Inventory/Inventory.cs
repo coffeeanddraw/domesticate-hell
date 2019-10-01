@@ -9,38 +9,35 @@ public class Inventory : MonoBehaviour
 
     void Awake()
     {
-        instance = this;   
+        instance = this;
+        
     }
     #endregion
 
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
-    public int space = 16;  // Amount of item spaces
-
-    // Our current list of items in the inventory
-    public List<GameObject> items = new List<GameObject>();
-
+    public int space = 16;
+    public List<GameObject> items;
     public GameObject inventoryUI;
 
+    void Start()
+    {
+        items = new List<GameObject>();
+    }
 
-    // Add a new item if enough room
     public void Add(GameObject item)
     {
-        if (item.GetComponent<InteractionObject>().invetory)
+        if (items.Count >= space)
         {
-            if (items.Count >= space)
-            {
-                Debug.Log("Not enough room.");
-                return;
-            }
-
-            items.Add(item);
-
-            inventoryUI.gameObject.GetComponent<InventoryUI>().UpdateUI();     
-
-            item.SendMessage("DoInteraction");
+            Debug.Log("Not enough room.");
+            return;
         }
+
+        items.Add(item);
+        
+        if (onItemChangedCallback != null)
+            onItemChangedCallback.Invoke();
     }
 
     // Remove an item

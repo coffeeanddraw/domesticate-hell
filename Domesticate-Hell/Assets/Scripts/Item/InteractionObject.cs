@@ -1,32 +1,53 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractionObject : MonoBehaviour
 {
-    public new string name = "New Item";
-    public GameObject UI;
-    public Sprite icon;
-    public bool invetory;
+    public RectTransform UI;
+    public bool CanGoToInventory;
     public bool CanOpenInventory;
+    public bool IsAnAnimal;
+    Inventory inventory;
 
-    private void Start()
+    RectTransform newPos;
+
+    void Start()
     {
-        name = this.gameObject.name;
+        inventory = Inventory.instance;
     }
 
-    public void DoInteraction()
+    public void DoInteraction(GameObject playerInteracted)
     {
-        gameObject.SetActive(false);
+        if (this.CanGoToInventory)
+        {
+            inventory.Add(playerInteracted);
+            SetGameObject(playerInteracted);
+        }
+        if (this.CanOpenInventory)
+        {
+            ShowCanvas();
+        }
     }
 
-    public void EnableCanvas()
+    private void SetGameObject(GameObject playerInteracted)
     {
-        UI.SetActive(true);
+        playerInteracted.SetActive(false);
+    }
+
+    public void ShowCanvas()
+    {
+        var position = UI.position;
+        position.x = 136f;
+        UI.position = position;
     }
     
-    public void DisableCanvas()
+    public void HideCanvas()
     {
-        UI.SetActive(false);
+        var position = UI.position;
+        position.x = -132f;
+        UI.position = position;
     }
 }
