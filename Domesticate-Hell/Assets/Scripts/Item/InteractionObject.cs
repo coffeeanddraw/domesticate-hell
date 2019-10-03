@@ -12,12 +12,18 @@ public class InteractionObject : MonoBehaviour
     public bool IsAnAnimal;
     public bool IsStair;
     Inventory inventory;
+    Pet pet;
+
+
+    public int health;
+    public int xp;
 
     RectTransform newPos;
 
     void Start()
     {
         inventory = Inventory.instance;
+        pet = new Pet();
     }
 
     public void DoInteraction(GameObject playerInteracted)
@@ -35,6 +41,17 @@ public class InteractionObject : MonoBehaviour
         {
             Debug.Log("Stair");
         }
+        if (this.IsAnAnimal)
+        { 
+            fedPet(playerInteracted);
+        }
+    }
+
+    private void fedPet(GameObject playerInteracted)
+    {
+        GameObject item = inventory.searchItem();
+        playerInteracted.GetComponent<Pet>().giveFoodToPet(item);
+        inventory.Remove(item);
     }
 
     private void SetGameObject(GameObject playerInteracted)
