@@ -10,6 +10,7 @@ public class InteractionObject : MonoBehaviour
     public bool CanGoToInventory;
     public bool CanOpenInventory;
     public bool IsAnAnimal;
+    public bool IsStair;
     Inventory inventory;
 
     RectTransform newPos;
@@ -29,6 +30,10 @@ public class InteractionObject : MonoBehaviour
         if (this.CanOpenInventory)
         {
             ShowCanvas();
+        }
+        if (this.IsStair)
+        {
+            Debug.Log("Stair");
         }
     }
 

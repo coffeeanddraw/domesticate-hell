@@ -271,3 +271,7 @@ C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.
 C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.dll
 C:\workspace\Angelo\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Angelo\Desktop\Third Semester\Indie\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Angelo\Desktop\Third Semester\Indie\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Angelo\Desktop\Third Semester\Indie\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.dll
+C:\Users\Angelo\Desktop\Third Semester\Indie\domesticate-hell\Domesticate-Hell\obj\Debug\Assembly-CSharp.pdb
