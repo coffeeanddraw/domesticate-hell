@@ -91,7 +91,7 @@ public class Pet : MonoBehaviour
 
     void generateItem()
     {
-        Vector3 x = new Vector3(pet_gameObject.transform.position.x - 1, pet_gameObject.transform.position.y, pet_gameObject.transform.position.z);
+        Vector3 x = new Vector3(pet_gameObject.transform.position.x - 1, pet_gameObject.transform.position.y, pet_gameObject.transform.position.z - 1);
 
         Instantiate(generateItemPrefab, x, Quaternion.identity);
     }
