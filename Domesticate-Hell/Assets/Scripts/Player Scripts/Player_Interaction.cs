@@ -11,6 +11,7 @@ public class Player_Interaction : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetButtonDown("Interact") && currentInteractionObject)
         {
             currentInteractionScript.DoInteraction(currentInteractionObject);

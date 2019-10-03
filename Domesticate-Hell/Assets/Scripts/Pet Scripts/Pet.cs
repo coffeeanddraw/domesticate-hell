@@ -12,7 +12,10 @@ public class Pet : MonoBehaviour
     public int pet_level;
 
     float timePerHunger;
+    float timeGenerateItem;
 
+
+    public GameObject generateItemPrefab;
 
     void Start()
     {
@@ -20,21 +23,42 @@ public class Pet : MonoBehaviour
         this.pet_health = 100;
         this.pet_experience = 0;
         this.pet_level = 1;
-}
+    }
 
     void Update()
     {
-        Debug.Log(timePerHunger);
         timePerHunger += Time.deltaTime;
+        timeGenerateItem += Time.deltaTime;
 
-        if(timePerHunger > 10)
+        if (timePerHunger > 10)
         {
             damagePerTime();
             resetTimePerHunger();
         }
 
-        checkPetHealth();
+        if (timeGenerateItem > 10)
+        {
+            generateItem();
+            resetTimeGenerateItem();
+        }
 
+        checkPetHealth();
+        checkPetLevel();
+
+    }
+
+    private void resetTimeGenerateItem()
+    {
+        this.timeGenerateItem = 0f;
+    }
+
+    private void checkPetLevel()
+    {
+        if (this.pet_experience == 100)
+        {
+            this.pet_level += 1;
+            this.pet_experience = 0;
+        }
     }
 
     private void checkPetHealth()
@@ -55,9 +79,19 @@ public class Pet : MonoBehaviour
         this.pet_health = this.pet_health - this.pet_hunger;
     }
 
-    void giveFoodToPet(InteractionObject food)
+    public void giveFoodToPet(GameObject food)
     {
-        this.pet_health += food.health;
-        this.pet_experience += food.xp;
+        int health = food.GetComponent<InteractionObject>().health;
+        int xp = food.GetComponent<InteractionObject>().xp;
+
+        this.pet_health += health;
+        this.pet_experience += xp;
+    }
+
+    void generateItem()
+    {
+        Vector3 x = new Vector3(this.gameObject.transform.localPosition.x - 1, this.gameObject.transform.localPosition.y, this.gameObject.transform.localPosition.z);
+
+        Instantiate(generateItemPrefab, x, Quaternion.identity);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -47,5 +48,11 @@ public class Inventory : MonoBehaviour
 
         if (onItemChangedCallback != null)
             onItemChangedCallback.Invoke();
+    }
+
+    public GameObject searchItem()
+    {
+       GameObject item =  items.Where(x => x.tag == "Food").SingleOrDefault();
+       return item;
     }
 }

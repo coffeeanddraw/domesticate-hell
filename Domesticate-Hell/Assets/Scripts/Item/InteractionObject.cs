@@ -11,6 +11,7 @@ public class InteractionObject : MonoBehaviour
     public bool CanOpenInventory;
     public bool IsAnAnimal;
     Inventory inventory;
+    Pet pet;
 
 
     public int health;
@@ -21,6 +22,7 @@ public class InteractionObject : MonoBehaviour
     void Start()
     {
         inventory = Inventory.instance;
+        pet = new Pet();
     }
 
     public void DoInteraction(GameObject playerInteracted)
@@ -35,9 +37,16 @@ public class InteractionObject : MonoBehaviour
             ShowCanvas();
         }
         if (this.IsAnAnimal)
-        {
-
+        { 
+            fedPet(playerInteracted);
         }
+    }
+
+    private void fedPet(GameObject playerInteracted)
+    {
+        GameObject item = inventory.searchItem();
+        playerInteracted.GetComponent<Pet>().giveFoodToPet(item);
+        inventory.Remove(item);
     }
 
     private void SetGameObject(GameObject playerInteracted)
