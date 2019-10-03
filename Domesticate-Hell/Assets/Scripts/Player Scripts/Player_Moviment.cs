@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player_Moviment : MonoBehaviour
 {
-    [SerializeField]float runSpeed = 40f;
+    [SerializeField] float runSpeed = 40f;
+    [SerializeField] bool onLadder;
 
     float horizontalMove = 0f;
     float verticalMove = 0f;
@@ -18,10 +19,7 @@ public class Player_Moviment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
-
     }
 
     void FixedUpdate()

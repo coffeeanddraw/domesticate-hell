@@ -10,6 +10,9 @@ TagManager:
   - Animal
   - Computer
   - AI
+  - Stair
+  - Enviroment
+  - Floor
   layers:
   - Default
   - TransparentFX
