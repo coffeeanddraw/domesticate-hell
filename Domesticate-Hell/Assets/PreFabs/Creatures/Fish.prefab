@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3685130006047253371}
   - component: {fileID: 3685130006047253370}
+  - component: {fileID: 7251090020962040756}
   - component: {fileID: 5869043374383031222}
   - component: {fileID: 5003556160940912747}
   m_Layer: 0
@@ -81,6 +82,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &7251090020962040756
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3685130006047253369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!114 &5869043374383031222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,5 +133,5 @@ MonoBehaviour:
   pet_health: 0
   pet_experience: 0
   pet_level: 1
-  generateItemPrefab: {fileID: 7554459465869004131, guid: 7b76f44398702814ea653dac2a6af2c8,
+  generateItemPrefab: {fileID: 3239633570825740588, guid: 0f1ca9000c9c67340b53a1000b272f3b,
     type: 3}
