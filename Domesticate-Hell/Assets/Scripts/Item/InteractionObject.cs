@@ -12,6 +12,10 @@ public class InteractionObject : MonoBehaviour
     public bool IsAnAnimal;
     Inventory inventory;
 
+
+    public int health;
+    public int xp;
+
     RectTransform newPos;
 
     void Start()
@@ -29,6 +33,10 @@ public class InteractionObject : MonoBehaviour
         if (this.CanOpenInventory)
         {
             ShowCanvas();
+        }
+        if (this.IsAnAnimal)
+        {
+
         }
     }
 
