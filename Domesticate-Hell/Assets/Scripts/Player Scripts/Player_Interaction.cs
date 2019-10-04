@@ -7,6 +7,7 @@ public class Player_Interaction : MonoBehaviour
     public GameObject InventoryUI;
     public GameObject currentInteractionObject = null;
     public GameObject nameEnviroment = null;
+    public GameObject gameObjectInventory = null;
     public GameObject onStair = null;
     public InteractionObject currentInteractionScript = null;
     public Player_Climb playerInteractionStair = null;
@@ -15,9 +16,16 @@ public class Player_Interaction : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Interact") && currentInteractionObject)
+        if (Input.GetButtonDown("Interact") || Input.GetButton("Interact"))
         {
-            currentInteractionScript.DoInteraction(currentInteractionObject);
+            if (currentInteractionObject)
+            {
+                currentInteractionScript.DoInteraction(currentInteractionObject);
+            }
+            else if (gameObjectInventory)
+            {
+                currentInteractionScript.DoInteraction(gameObjectInventory);
+            } 
         }
 
         if(Input.GetKey("s") && onStair || Input.GetAxis("VerticalDown") >= 1 && onStair)
@@ -39,7 +47,7 @@ public class Player_Interaction : MonoBehaviour
             playerInteractionStair.StopClimbing2();
         }
 
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") || Input.GetButton("CloseInventory"))
         {
             currentInteractionScript.HideCanvas();
         }
@@ -70,8 +78,8 @@ public class Player_Interaction : MonoBehaviour
         else if (x.CompareTag("AI"))
         {
             Debug.Log(x.name);
-            currentInteractionObject = x.gameObject;
-            currentInteractionScript = currentInteractionObject.GetComponent<InteractionObject>();
+            gameObjectInventory = x.gameObject;
+            currentInteractionScript = gameObjectInventory.GetComponent<InteractionObject>();
         }
         else if (x.CompareTag("Stair"))
         {
@@ -112,9 +120,9 @@ public class Player_Interaction : MonoBehaviour
         }
         else if (x.CompareTag("AI"))
         {
-            if (x.gameObject == currentInteractionObject)
+            if (x.gameObject == gameObjectInventory)
             {
-                currentInteractionObject = null;
+                gameObjectInventory = null;
             }
         }
         else if (x.CompareTag("Stair"))

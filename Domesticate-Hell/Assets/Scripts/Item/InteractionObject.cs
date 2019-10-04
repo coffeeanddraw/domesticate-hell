@@ -56,7 +56,7 @@ public class InteractionObject : MonoBehaviour
 
     private void SetGameObject(GameObject playerInteracted)
     {
-        Destroy(playerInteracted);
+        playerInteracted.SetActive(false);
     }
 
     public void ShowCanvas()
