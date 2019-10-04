@@ -50,6 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Furniture
+    uniqueID: 1383157739
+    locked: 0
   - name: ShopItems
     uniqueID: 1646307053
     locked: 0
