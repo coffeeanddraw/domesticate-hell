@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Player Scripts\Player_Interaction.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Moviment.cs" />
     <Compile Include="Assets\Scripts\SceneGuard.cs" />
+    <None Include="Assets\UI\Resources\Shaders\blur.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ishan/Documents/GitHub/domesticate-hell/Domesticate-Hell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
