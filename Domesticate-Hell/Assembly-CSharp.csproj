@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Item\InteractionObject.cs" />
+    <Compile Include="Assets\Scripts\Other\HellishTime.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\Pet.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\PetMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Climb.cs" />
