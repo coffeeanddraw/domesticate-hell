@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿//🦇Bat Girl 2019🦇 
+// For Domesticate Hell 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
@@ -7,8 +10,6 @@ public class HellishTime : MonoBehaviour
 {
     [SerializeField]
     private Text clockText;
-
-    private const float secondsPerDay = 120f;
 
     private int days = 0;
     private int hours = 20;
@@ -59,9 +60,9 @@ public class HellishTime : MonoBehaviour
         string dag = days.ToString(); // day in dutch
         string uur = " "; // hours in dutch
         string notulen = " "; // minutes in dutch
-        string amOrPm = "AM";
+        string amOrPm = "AM"; // keep tract of AM or PM
          
-
+        // Format AM / PM for printing on screen
         if (hours < 12)
         {
             if (hours == 0)
@@ -78,6 +79,7 @@ public class HellishTime : MonoBehaviour
             amOrPm = "PM";
         }
 
+        // Format minutes for printing on screen 
         if (minutes <10)
         {
             notulen = "0" + minutes.ToString();
@@ -86,6 +88,7 @@ public class HellishTime : MonoBehaviour
             notulen = minutes.ToString();
         }
 
+        // Format hours for pinting on screen
         switch (hours)
         {
             case 13:
@@ -124,6 +127,6 @@ public class HellishTime : MonoBehaviour
         } 
 
         // Print current time to canvas
-        clockText.text = "Day: " + days.ToString() + "    " + uur + ":" + notulen + " " + amOrPm;
+        clockText.text = "Day: " + dag + "    " + uur + ":" + notulen + " " + amOrPm;
     }
 }   
