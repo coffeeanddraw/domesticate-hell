@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: b641b560dff44314ab962aa8484f2300
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Intro01.unity
+    guid: 3833c00f95e3b6e42aafaab502103ad7
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Intro02.unity
+    guid: 3fd1a4cd4d2ae6245ba292e64bf55474
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Intro03.unity
+    guid: 12e4294c136baca449e724440ae3bad3
   - enabled: 1
     path: Assets/Scenes/EnvironmentTest1.unity
     guid: 1f09abc16cb334c46bd1439767a90856
