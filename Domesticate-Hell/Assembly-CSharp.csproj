@@ -284,6 +284,12 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
+    <Reference Include="DialogueSystem">
+      <HintPath>C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Assets/Plugins/Pixel Crushers/Dialogue System/DLLs/DialogueSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="PixelCrushers">
+      <HintPath>C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Assets/Plugins/Pixel Crushers/Common/DLLs/PixelCrushers.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
@@ -629,6 +635,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{49D707CC-12B6-245D-49D1-5367EA178FC8}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

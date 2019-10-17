@@ -1,0 +1,518 @@
+/target:library
+/nowarn:0169
+/out:Temp/Assembly-CSharp-firstpass.dll
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEditor.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/Unity.Locator.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+/reference:C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll
+/reference:C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll
+/reference:C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll
+/reference:"Assets/Plugins/Pixel Crushers/Dialogue System/DLLs/DialogueSystem.dll"
+/reference:"Assets/Plugins/Pixel Crushers/Common/DLLs/PixelCrushers.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/define:UNITY_2019_1_9
+/define:UNITY_2019_1
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:PLATFORM_ARCH_64
+/define:UNITY_64
+/define:UNITY_INCLUDE_TESTS
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_DUCK_TYPING
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_SPRITES
+/define:ENABLE_GRID
+/define:ENABLE_TILEMAP
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_DIRECTOR
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_WEBCAM
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_HUB
+/define:ENABLE_CLOUD_PROJECT_ID
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_TIMELINE
+/define:ENABLE_EDITOR_METRICS
+/define:ENABLE_EDITOR_METRICS_CACHING
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:INCLUDE_GI
+/define:ENABLE_MONO_BDWGC
+/define:PLATFORM_SUPPORTS_MONO
+/define:RENDER_SOFTWARE_CURSOR
+/define:INCLUDE_PUBNUB
+/define:ENABLE_VIDEO
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_LOCALIZATION
+/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_STANDALONE
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE
+/define:ENABLE_SUBSTANCE
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_MOVIES
+/define:ENABLE_NETWORK
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_VR
+/define:ENABLE_AR
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+"Assets\Plugins\Pixel Crushers\Common\Templates\SaverTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Message System\DataSynchronizer.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Message System\MessageEvents.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Message System\MessageSystemLogger.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Misc\AlwaysFaceCamera.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Misc\CheckPhysics2D.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Misc\DontDestroyGameObject.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Misc\EditorNote.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Misc\InstantiatePrefabs.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Misc\LODManager.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Misc\AutoSaveLoad.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Misc\SaveSystemEvents.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Misc\SaveSystemMethods.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Misc\SaveSystemTestMenu.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Misc\ScenePortal.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Savers\ActiveSaver.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Savers\AnimatorSaver.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Savers\DestructibleSaver.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Savers\EnabledSaver.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Savers\PositionSaver.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\SaveSystem.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Serializers\Binary\BinaryDataSerializer.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Serializers\JsonDataSerializer.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Spawning\SpawnedObject.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Spawning\SpawnedObjectManager.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Storers\DiskSavedGameDataStorer.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Storers\PlayerPrefsSavedGameDataStorer.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Save System\Transitions\StandardSceneTransitionManager.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Text\GlobalTextTable.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Text\StringAsset.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\Text\TextTable.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\InputDeviceManager.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\InputDeviceMethods.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\KeepRectTransformOnscreen.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\LocalizeUI.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\UIButtonKeyTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\UILocalizationManager.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\UIPanel.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\UIScrollbarEnabler.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UI\UITextColor.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UnityEvents\CollisionEvent.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UnityEvents\DisappearEvent.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UnityEvents\TimedEvent.cs"
+"Assets\Plugins\Pixel Crushers\Common\Wrappers\UnityEvents\TriggerEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Cinemachine\Sequencer Commands\SequencerCommandCinemachinePriority.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Cinemachine\Triggers\CinemachineCameraPriorityOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Bark\BarkBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Bark\BarkClip.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Bark\BarkMixerBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Bark\BarkTrack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Continue\ContinueConversationBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Continue\ContinueConversationClip.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Continue\ContinueConversationTrack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Continue\ConversationContinueMixerBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Conversation\ConversationMixerBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Conversation\ConversationTrack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Conversation\StartConversationBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Conversation\StartConversationClip.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\PlaySequence\PlaySequenceBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\PlaySequence\PlaySequenceClip.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\PlaySequence\PlaySequenceMixerBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\PlaySequence\PlaySequenceTrack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\QuestState\QuestStateMixerBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\QuestState\QuestStateTrack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\QuestState\SetQuestStateBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\QuestState\SetQuestStateClip.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\ShowAlert\AlertMixerBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\ShowAlert\AlertTrack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\ShowAlert\ShowAlertBehaviour.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\ShowAlert\ShowAlertClip.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Utility\PreviewUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Sequencer\SequencerCommandTimeline.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Triggers\TimelineTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\Aurora\TemplateNWScript.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\PersistentDataTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\SequencerCommandTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\TemplateBarkUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\TemplateCustomLua.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\TemplateDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\TemplateQuestLogWindow.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Templates\Scripts\TemplateTextFieldUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Demo\DemoMenu.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Demo\DieOnTakeDamage.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Demo\NavigateOnMouseClick.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Demo\SimpleController.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Demo\SmoothCameraWithBumper.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\AudioEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\ContinueButtonFastForward.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\FadeEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\FlashEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIButton.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIControl.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIImage.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUILabel.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIProgressBar.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIRoot.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIScrollView.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUITextField.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIVisibleControl.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\GUIWindow.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\SlideEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\TimerEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\TypewriterEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\UnityBarkUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\UnityBarkUIOnGUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\UnityDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\UnityGUIQuestLogWindow.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Legacy GUI\UnityTextFieldUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Localized Text\LocalizedTextTable.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\AlertTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\BarkOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\BarkTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\ConversationTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\LuaOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\LuaTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\QuestTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SendMessageOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SequenceTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SetActiveOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SetAnimationOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SetAnimatorStateOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SetComponentEnabledOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SetEnabledOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\SetQuestStateOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\ShowCursorOnConversation.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\StartConversationOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\StartSequenceOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Deprecated\Triggers\StopConversationIfTooFar.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Importers\Articy\ArticyLuaFunctions.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Manager\DialogueSystemController.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Manager\DialogueSystemEvents.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Manager\ExtraDatabases.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\ActorSubtitleColor.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\BarkGroupMember.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\DefaultCameraAngle.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\DialogueActor.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\Override\OverrideDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\Override\OverrideDisplaySettings.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Actor\OverrideActorName.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\Model\DialogueDatabase.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\View\BarkDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\View\SequencerShortcuts.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\MVC\View\TextlessBarkUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Options\Cinemachine\CinemachineCameraPriorityOnDialogueEvent.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Options\Timeline\TimelineTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Quests\IncrementOnDestroy.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Quests\QuestLogWindowHotkey.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Quests\QuestStateIndicator.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Quests\QuestStateListener.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\ConversationStateSaver.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\DialogueSystemSaver.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\GameSaver.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\LevelManager.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\PersistentActiveData.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\PersistentDestructible.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Save System\PersistentPositionData.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Interaction\ProximitySelector.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Interaction\Selector.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Interaction\SelectorFollowTarget.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Interaction\Usable.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Trigger\BarkOnIdle.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Trigger\ConditionObserver.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Trigger\DialogueSystemTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Triggers\Trigger\RangeTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Bark\StandardBarkUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Dialogue\StandardDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Dialogue\StandardUIInputField.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Dialogue\StandardUIMenuPanel.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Dialogue\StandardUIResponseButton.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Dialogue\StandardUISubtitlePanel.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Effects\StandardUIColorText.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Effects\StandardUIContinueButtonFastForward.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Effects\StandardUIIgnorePauseCodes.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\Common\StandardUIButtonTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\Common\StandardUIFoldoutTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\Common\StandardUITextTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\Common\StandardUIToggleTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\StandardUIQuestLogWindow.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\StandardUIQuestTitleButtonTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\StandardUIQuestTracker.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Quest\StandardUIQuestTrackTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Selector\SelectorUseStandardUIElements.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Selector\StandardUISelectorElements.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Selector\StandardUsableUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\TextMesh\LocalizeTextMesh.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Bark\UnityUIBarkUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\OverrideUnityUIDialogueControls.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\Portraits\AnimatedPortrait.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\Portraits\UseAnimatedPortraits.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\UnityUIBarkSubtitleDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\UnityUIDialogueUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\UnityUIResponseButton.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\UnityUITextFieldUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Dialogue\UnityUITimer.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Effects\LocalizeUIText.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Effects\UnityUIContinueButtonFastForward.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Effects\UpdateLocalizedUITexts.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestGroupTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestLogWindow.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestTemplateAlternateDescriptions.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestTitle.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestTracker.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Quest\UnityUIQuestTrackTemplate.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Selector\UnityUISelectorDisplay.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Selector\UnityUISelectorElements.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Unity UI\Selector\UsableUnityUI.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\PreloadActorPortraits.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\TextMeshProTypewriterEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\UIButtonKeyTrigger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\UnityUIColorText.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\UnityUIIgnorePauseCodes.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\UnityUIScrollbarEnabler.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Utility\UnityUITypewriterEffect.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Utility\AlwaysFaceCamera.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Utility\CommonLibraryLua.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Utility\ConversationLogger.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Utility\ConversationPositionStack.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Utility\LuaConsole.cs"
+"Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\Utility\LuaNetworkCommands.cs"
