@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Other\Camera_Control.cs" />
     <Compile Include="Assets\Scripts\Other\HellishTime.cs" />
     <Compile Include="Assets\Scripts\Other\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Other\RoundCameraPos.cs" />
     <Compile Include="Assets\Scripts\Other\SceneGuard.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\Pet.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\PetMovement.cs" />
