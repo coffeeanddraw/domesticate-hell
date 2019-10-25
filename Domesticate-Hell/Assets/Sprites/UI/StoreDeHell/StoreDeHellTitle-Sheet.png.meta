@@ -1,0 +1,485 @@
+fileFormatVersion: 2
+guid: 7f2736170e3588d46a7fb6b5b390e83d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4991939818831496708
+    second: StoreDeHellTitle-Sheet_0
+  - first:
+      213: 7930225464155997525
+    second: StoreDeHellTitle-Sheet_1
+  - first:
+      213: 8958392785758785485
+    second: StoreDeHellTitle-Sheet_2
+  - first:
+      213: -9128865044287535783
+    second: StoreDeHellTitle-Sheet_3
+  - first:
+      213: -5971837942104204559
+    second: StoreDeHellTitle-Sheet_4
+  - first:
+      213: -2999779977180581512
+    second: StoreDeHellTitle-Sheet_5
+  - first:
+      213: 7835723679946016512
+    second: StoreDeHellTitle-Sheet_6
+  - first:
+      213: -2331021791310474271
+    second: StoreDeHellTitle-Sheet_7
+  - first:
+      213: 1730313379068296909
+    second: StoreDeHellTitle-Sheet_8
+  - first:
+      213: 5416610127733100048
+    second: StoreDeHellTitle-Sheet_9
+  - first:
+      213: -2910603548559616787
+    second: StoreDeHellTitle-Sheet_10
+  - first:
+      213: 1525078787300104652
+    second: StoreDeHellTitle-Sheet_11
+  - first:
+      213: 4225027581058404859
+    second: StoreDeHellTitle-Sheet_12
+  - first:
+      213: -8150228405651423649
+    second: StoreDeHellTitle-Sheet_13
+  - first:
+      213: 1356856836301624236
+    second: StoreDeHellTitle-Sheet_14
+  - first:
+      213: -6244269951672508082
+    second: StoreDeHellTitle-Sheet_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b745c804dd014549af7fc8f3e674c3b
+      internalID: 4991939818831496708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 87
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806c5e41d9f41c240863d05df2b64a4b
+      internalID: 7930225464155997525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 87
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6985d48a8dfb5fb4faaf8927ef24715c
+      internalID: 8958392785758785485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 87
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28674df4bcc98546a8c41a2afdbe48c
+      internalID: -9128865044287535783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cd827bdfb65e0489e9fbd5c7e05a80
+      internalID: -5971837942104204559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 58
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843f8d2ed18f40b4ebbb6ee5fab68ddf
+      internalID: -2999779977180581512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 58
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cb2eb3efe0410458b2cb94ddb42eed
+      internalID: 7835723679946016512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 58
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c895392d5fa3b468696b216383dce6
+      internalID: -2331021791310474271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9916f8b8525cee4babad356212c45d4
+      internalID: 1730313379068296909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 29
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b0419f0289b5b4c923af907109e313
+      internalID: 5416610127733100048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 29
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dd4218895d0584e82f673ee0586f6f
+      internalID: -2910603548559616787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 29
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78795777684fa24da54ccd680090833
+      internalID: 1525078787300104652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b26550fef02cc41ab67e80c005cb43
+      internalID: 4225027581058404859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52031d60b40a6ef41b666eab9407888b
+      internalID: -8150228405651423649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a281e3070781904880c2dc3abc08740
+      internalID: 1356856836301624236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoreDeHellTitle-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 0
+        width: 93
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3130681b61cd05c4ebd9b8dc516cef11
+      internalID: -6244269951672508082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 71da7f68aaf648a499090dcbd4afb604
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
