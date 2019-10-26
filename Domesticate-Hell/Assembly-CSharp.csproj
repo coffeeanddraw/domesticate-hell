@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Other\ButtonTransition.cs" />
     <Compile Include="Assets\Scripts\Other\Camera_Control.cs" />
     <Compile Include="Assets\Scripts\Other\D4N.cs" />
+    <Compile Include="Assets\Scripts\Other\D4NManager.cs" />
     <Compile Include="Assets\Scripts\Other\GameManager.cs" />
     <Compile Include="Assets\Scripts\Other\HellishTime.cs" />
     <Compile Include="Assets\Scripts\Other\Menu_Script.cs" />

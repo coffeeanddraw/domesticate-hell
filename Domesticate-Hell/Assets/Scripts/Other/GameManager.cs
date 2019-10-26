@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private static bool hasShadowkey = false;
     private static bool hasElectricityKey = false;
     private static bool hasAlchemyKey = false;
+    private static bool completeD4NIntro = false; 
 
     // getter & setter // 
 
@@ -55,6 +56,12 @@ public class GameManager : MonoBehaviour
     {
         get { return hasAlchemyKey; }
         set { hasAlchemyKey = value; }
+    }
+
+    public static bool CompleteD4NIntro
+    {
+        get { return completeD4NIntro; }
+        set { completeD4NIntro = value; }
     }
 
     public static GameManager Instance

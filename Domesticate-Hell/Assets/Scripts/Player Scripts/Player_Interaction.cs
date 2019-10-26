@@ -19,6 +19,7 @@ public class Player_Interaction : MonoBehaviour
     public Player_Climb playerInteractionStair = null;
     public Inventory inventory;
     public bool AtStore = false;
+    public bool WithD4N = false;
     public bool StoreOnDisplay = false;
 
     void Awake()
@@ -32,6 +33,13 @@ public class Player_Interaction : MonoBehaviour
         if (Input.GetButtonDown("Interact") || Input.GetButton("Interact"))
         {
             Debug.Log("Player is attempting to interact");
+            // Check if the player is with D4N 
+            if (WithD4N == true)
+            {
+                Debug.Log(D4NManager.PlayerInteracting);
+                D4NManager.PlayerInteracting = true;
+                
+            }
             // Check if the player is at the store 
             if (AtStore == true) // Player at the store 
             {
@@ -88,12 +96,17 @@ public class Player_Interaction : MonoBehaviour
     // Entering collider trigger
     void OnTriggerEnter2D(Collider2D x)
     {
-        if(x.CompareTag("StoreDeHell"))
+        if(x.CompareTag("StoreDeHell")) // At Store? 
         {
             Debug.Log("Entered Store de Hell!");
             AtStore = true;
         }
-        if (x.CompareTag("Food"))
+        else if(x.CompareTag("D4N")) // With D4N? 
+        {
+            WithD4N = true;
+            Debug.Log(WithD4N);
+        }
+        else if (x.CompareTag("Food"))
         {
             Debug.Log(x.name);
             currentInteractionObject = x.gameObject;
@@ -134,14 +147,18 @@ public class Player_Interaction : MonoBehaviour
     // Exiting collider trigger
     void OnTriggerExit2D(Collider2D x) 
     {
-        // exiting Store de Hell?
-        if (x.CompareTag("StoreDeHell"))
+        if (x.CompareTag("StoreDeHell")) // exiting Store de Hell?
         {
             // set AtStore to false if exiting Store de Hell
             Debug.Log("Leaving Store de Hell!");
             AtStore = false;
         }
-        if (x.CompareTag("Food"))
+        else if (x.CompareTag("D4N")) // saying bye to D4N?
+        {
+            WithD4N = false;
+            Debug.Log(WithD4N); 
+        }
+        else if (x.CompareTag("Food"))
         {
             if (x.gameObject == currentInteractionObject)
             {

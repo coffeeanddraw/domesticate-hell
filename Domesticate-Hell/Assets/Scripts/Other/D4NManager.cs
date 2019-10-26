@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Animations;
 
-public class D4N : MonoBehaviour
+public class D4NManager : MonoBehaviour
 {
+    [SerializeField]
+    private Animator currentD4N; 
+
     [SerializeField]
     private AnimatorController defaultD4N;
 
     [SerializeField]
     private AnimatorController notificationD4N;
 
-    private Animator currentD4N; 
-   
     private bool completeD4NTutorial = false;
     private bool notification = false;
     private static bool playerInteracting = false; 
