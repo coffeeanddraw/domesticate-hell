@@ -1,9 +1,15 @@
-﻿using System.Collections;
+﻿// J & Angelo 2019
+// For Domesticate Hell 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player_Interaction : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject StoreDeHell;
+
     public GameObject InventoryUI;
     public GameObject currentInteractionObject = null;
     public GameObject nameEnviroment = null;
@@ -12,12 +18,36 @@ public class Player_Interaction : MonoBehaviour
     public InteractionObject currentInteractionScript = null;
     public Player_Climb playerInteractionStair = null;
     public Inventory inventory;
+    public bool AtStore = false;
+    public bool StoreOnDisplay = false;
+
+    void Awake()
+    {
+        StoreDeHell.SetActive(false);
+    }
 
     void Update()
     {
-
+        // Is Player trying to interact
         if (Input.GetButtonDown("Interact") || Input.GetButton("Interact"))
         {
+            Debug.Log("Player is attempting to interact");
+            // Check if the player is at the store 
+            if (AtStore == true) // Player at the store 
+            {
+                // Check if the store is on display 
+                if (StoreOnDisplay == false) // Store is not on display 
+                {
+                    StoreDeHell.SetActive(true); // Turn on StoreDeHell canvas 
+                    StoreOnDisplay = true;
+                } 
+                else if (StoreOnDisplay == true) // Store is on display
+                {
+                    StoreDeHell.SetActive(false); // Turn off StoreDeHell Canvas
+                    StoreOnDisplay = false; 
+                }
+            } 
+
             if (currentInteractionObject)
             {
                 currentInteractionScript.DoInteraction(currentInteractionObject);
@@ -55,8 +85,14 @@ public class Player_Interaction : MonoBehaviour
         
     }
 
+    // Entering collider trigger
     void OnTriggerEnter2D(Collider2D x)
     {
+        if(x.CompareTag("StoreDeHell"))
+        {
+            Debug.Log("Entered Store de Hell!");
+            AtStore = true;
+        }
         if (x.CompareTag("Food"))
         {
             Debug.Log(x.name);
@@ -95,8 +131,16 @@ public class Player_Interaction : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D x)
+    // Exiting collider trigger
+    void OnTriggerExit2D(Collider2D x) 
     {
+        // exiting Store de Hell?
+        if (x.CompareTag("StoreDeHell"))
+        {
+            // set AtStore to false if exiting Store de Hell
+            Debug.Log("Leaving Store de Hell!");
+            AtStore = false;
+        }
         if (x.CompareTag("Food"))
         {
             if (x.gameObject == currentInteractionObject)

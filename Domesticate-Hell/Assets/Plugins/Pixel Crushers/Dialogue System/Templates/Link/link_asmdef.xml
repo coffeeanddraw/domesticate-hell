@@ -1,5 +1,0 @@
-<linker>
-    <assembly fullname="DialogueSystem">
-        <namespace fullname="PixelCrushers.DialogueSystem.SequencerCommands" preserve="all"/>
-    </assembly>
-</linker>

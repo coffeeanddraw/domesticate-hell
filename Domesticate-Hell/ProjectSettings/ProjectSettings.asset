@@ -514,7 +514,8 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: USE_CINEMACHINE;USE_AURORA;USE_PHYSICS2D
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
