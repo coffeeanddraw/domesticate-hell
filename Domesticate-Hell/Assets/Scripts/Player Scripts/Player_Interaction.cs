@@ -21,6 +21,11 @@ public class Player_Interaction : MonoBehaviour
     public bool AtStore = false;
     public bool StoreOnDisplay = false;
 
+    void Awake()
+    {
+        StoreDeHell.SetActive(false);
+    }
+
     void Update()
     {
         // Is Player trying to interact

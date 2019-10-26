@@ -13,8 +13,10 @@ TagManager:
   - Stair
   - Enviroment
   - Floor
-  - Selection Mask
   - StoreDeHell
+  - StoreItemFood
+  - SelectionMask
+  - StoreItemTickets
   layers:
   - Default
   - TransparentFX

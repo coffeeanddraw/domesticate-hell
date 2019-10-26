@@ -7,32 +7,27 @@ using UnityEngine;
 
 public class ButtonTransition : MonoBehaviour
 {
-    private GameObject SelectionMask;
+    [SerializeField]
+    private GameObject selectionMask;
 
-    void Awake()
+    private void Awake()
     {
-        FindSelectionMask();
+        this.selectionMask.SetActive(false);
     }
-
-    void FindSelectionMask()
-    {
-        foreach (Transform child in transform)
-        {
-            // Find the Selection Mask 
-            if (child.gameObject.tag == "Selection Mask")
-            {
-                SelectionMask = child.gameObject;
-            }
-        }
-    }
-
+    
     public void EnableSelectionMask()
     {
-        SelectionMask.SetActive(true);
+        if (selectionMask != null)
+        {
+            this.selectionMask.SetActive(true);
+        }  
     }
 
     public void DisableSelectionMask()
     {
-        SelectionMask.SetActive(false);
+        if (selectionMask != null)
+        {
+            this.selectionMask.SetActive(false);
+        }
     }
 }
