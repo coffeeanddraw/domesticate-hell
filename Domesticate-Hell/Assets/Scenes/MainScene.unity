@@ -1668,7 +1668,7 @@ PrefabInstance:
     - target: {fileID: 2720153153284476827, guid: c42af8c015daef84e8cf150e7422987a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0700008
+      value: 2.9799993
       objectReference: {fileID: 0}
     - target: {fileID: 2720153153284476827, guid: c42af8c015daef84e8cf150e7422987a,
         type: 3}
@@ -6627,7 +6627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353298416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9, y: -1.07, z: 0}
+  m_LocalPosition: {x: 6.9, y: 2.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6732,6 +6732,7 @@ MonoBehaviour:
   playerInteractionStair: {fileID: 1353298426}
   inventory: {fileID: 1353298424}
   AtStore: 0
+  WithD4N: 0
   StoreOnDisplay: 0
 --- !u!114 &1353298424
 MonoBehaviour:
@@ -9922,12 +9923,12 @@ PrefabInstance:
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.026815
+      value: 2.0264177
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9491943
+      value: 2.8361592
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}

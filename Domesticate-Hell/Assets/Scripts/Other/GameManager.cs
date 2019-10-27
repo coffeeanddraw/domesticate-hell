@@ -9,29 +9,27 @@ using UnityEngine;
 // SINGLETON //
 
 public class GameManager : MonoBehaviour
-{
-    // SerializeField // 
+{ 
 
-    private static int soulCount = 666;
-    private static int human = 0;
+    private static int soulCount = 0;
+    private static int humanCount = 0;
     private static bool hasFireKey = false;
     private static bool hasShadowkey = false;
     private static bool hasElectricityKey = false;
     private static bool hasAlchemyKey = false;
-    private static bool completeD4NIntro = false; 
 
     // getter & setter // 
 
     public static int SoulCount
     {
         get { return soulCount; }
-        set { soulCount += value; }
+        set { soulCount = value; }
     }
 
-    public static int Human
+    public static int HumanCount
     {
-        get { return human; }
-        set { human += value;  }
+        get { return humanCount; }
+        set { humanCount = value; }
     }
 
     public static bool HasFireKey
@@ -56,12 +54,6 @@ public class GameManager : MonoBehaviour
     {
         get { return hasAlchemyKey; }
         set { hasAlchemyKey = value; }
-    }
-
-    public static bool CompleteD4NIntro
-    {
-        get { return completeD4NIntro; }
-        set { completeD4NIntro = value; }
     }
 
     public static GameManager Instance
@@ -90,6 +82,7 @@ public class GameManager : MonoBehaviour
         // Immortal Object
         DontDestroyOnLoad(gameObject);
     }
+
 }
     
 

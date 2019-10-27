@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Animations;
+using UnityEngine.UI;
 
 public class D4NManager : MonoBehaviour
 {
+
+    // TODO: Complete D4N Dialogue Box // 
+
     [SerializeField]
-    private Animator currentD4N; 
+    private GameObject D4NCanvas;
+
+    [SerializeField]
+    private Text D4NDialogue;
 
     [SerializeField]
     private AnimatorController defaultD4N;
@@ -14,9 +21,13 @@ public class D4NManager : MonoBehaviour
     [SerializeField]
     private AnimatorController notificationD4N;
 
+    private Animator currentD4N;
     private bool completeD4NTutorial = false;
     private bool notification = false;
-    private static bool playerInteracting = false; 
+    private bool D4NDialogueOn = false;
+
+    // static variable for Player_Interaction.cs to access
+    private static bool playerInteracting = false;
 
     public static bool PlayerInteracting
     {
@@ -32,20 +43,51 @@ public class D4NManager : MonoBehaviour
 
     void Awake()
     {
-        CheckCompleteD4NTutorialState();
         currentD4N = GetComponent<Animator>();
+
+        D4NCanvas.SetActive(false);
     }
 
-    void CheckCompleteD4NTutorialState()
+    void Update()
     {
-        if (GameManager.CompleteD4NIntro == false)
+        CheckInteraction();
+    }
+
+    void CheckInteraction()
+    {
+        // Check if the player is clicking the Interact button AND if the player is interacting with D4N
+        if (Input.GetButtonDown("Interact") && playerInteracting && !D4NDialogueOn)
         {
-            completeD4NTutorial = false; 
+            if (completeD4NTutorial == false)
+            {
+                D4NTutorial();
+                completeD4NTutorial = true;
+            }
+            else if (completeD4NTutorial == true)
+            {
+                D4NDefault();
+            }
         }
-        else if(GameManager.CompleteD4NIntro == true)
+        else if (Input.GetButtonDown("Interact") && playerInteracting && D4NDialogueOn)
         {
-            completeD4NTutorial = true; 
+            D4NCanvas.SetActive(false);
         }
+    }
+
+    // D4N DIALOGUE SETTINGS // 
+
+    void D4NTutorial()
+    {
+        D4NDialogue.text = "D4N: Hello, Magenta! I have 666 souls for you.";
+        GameManager.SoulCount += 666;
+        D4NCanvas.SetActive(true);
+        D4NDialogueOn = true;
+    }
+
+    void D4NDefault()
+    {
+        D4NDialogue.text = "D4N: Hello, Magenta!";
+        D4NDialogueOn = true;
     }
 
     void OnTriggerEnter2D (Collider2D other)

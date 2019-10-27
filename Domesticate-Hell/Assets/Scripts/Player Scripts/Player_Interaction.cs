@@ -30,13 +30,15 @@ public class Player_Interaction : MonoBehaviour
     void Update()
     {
         // Is Player trying to interact
-        if (Input.GetButtonDown("Interact") || Input.GetButton("Interact"))
+        // if (Input.GetButtonDown("Interact") || Input.GetButton("Interact"))
+        if(Input.GetButtonDown("Interact"))
         {
             Debug.Log("Player is attempting to interact");
             // Check if the player is with D4N 
             if (WithD4N == true)
             {
                 Debug.Log(D4NManager.PlayerInteracting);
+                Debug.Log("player is interacting with D4N");
                 D4NManager.PlayerInteracting = true;
                 
             }
