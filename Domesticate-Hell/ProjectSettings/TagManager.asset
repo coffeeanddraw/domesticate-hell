@@ -8,7 +8,6 @@ TagManager:
   - Food
   - Inventory
   - Animal
-  - Computer
   - AI
   - Stair
   - Enviroment
@@ -17,6 +16,7 @@ TagManager:
   - StoreItemFood
   - SelectionMask
   - StoreItemTickets
+  - D4N
   layers:
   - Default
   - TransparentFX
