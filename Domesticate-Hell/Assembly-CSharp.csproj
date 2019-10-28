@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Other\SceneGuard.cs" />
     <Compile Include="Assets\Scripts\Other\StoreDeHellContent.cs" />
     <Compile Include="Assets\Scripts\Other\StoreItem.cs" />
+    <Compile Include="Assets\Scripts\Other\Teleporter.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\Pet.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\PetMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Climb.cs" />

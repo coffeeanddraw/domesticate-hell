@@ -54,6 +54,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Environment
+    uniqueID: 20169949
+    locked: 0
   - name: Furniture
     uniqueID: 1383157739
     locked: 0
