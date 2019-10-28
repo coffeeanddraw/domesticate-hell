@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7369fbe15cc0e30488d01cb2a24c234d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  D4NCanvas: {fileID: 0}
-  D4NDialogue: {fileID: 0}
+  dialogueBoxD4N: {fileID: 0}
+  D4NDialogueText: {fileID: 0}
   defaultD4N: {fileID: 9100000, guid: ac0b4775eb090484e9a06893cac7cca8, type: 2}
   notificationD4N: {fileID: 9100000, guid: c25756ffc06caa640a8b10195bb76cff, type: 2}

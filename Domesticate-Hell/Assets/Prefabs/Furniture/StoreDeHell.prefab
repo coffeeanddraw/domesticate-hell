@@ -140,8 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37fa33c8040d38046a925cdc1a7298a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storeDeHellCanvas: {fileID: 1858828159085903418, guid: 5ccb2011888bb134a8e4cfb91f57b4ca,
-    type: 3}
-  cattatonicatCanvas: {fileID: 3347070227107384398, guid: 28681ea08b835144c9de3c27c11cc95a,
-    type: 3}
+  storeDeHell: {fileID: 0}
+  dialogueBoxCattatonicat: {fileID: 0}
   cattatonicatDialogueText: {fileID: 0}

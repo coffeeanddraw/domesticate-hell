@@ -19,8 +19,7 @@ public class CattatonicatManager : MonoBehaviour
 
     private bool completeCattatonicatTutorial = false;
     private bool playerInRange = false;
-    private bool storeOnDisplay = false;
-    private bool dialogueOnDisplay = false;
+    private static bool storeOnDisplay = false;
 
     private static bool pendingDialogue = true; 
 
@@ -28,6 +27,11 @@ public class CattatonicatManager : MonoBehaviour
     {
         get { return pendingDialogue; }
         set { pendingDialogue = value; }
+    }
+
+    public static bool StoreOnDisplay
+    {
+        get { return storeOnDisplay; }
     }
 
     void Awake()
@@ -43,35 +47,67 @@ public class CattatonicatManager : MonoBehaviour
 
     void CheckInteraction()
     {
-        // Check if the playing is attempting to interact while being in range 
-        if (Input.GetButtonDown("Interact") && playerInRange && pendingDialogue)
+        if (Input.GetButtonDown("Interact"))
         {
-            CattatonicatDialogue();
-            Debug.Log("Calling 'CattatonicatDialogue()'");
-            Invoke("TurnOffDialogue", 5);
+            if(playerInRange)
+            {
+                if(pendingDialogue == true)
+                {
+                    CattatonicatDialogue();
+                    Debug.Log("Calling 'CattatonicatDialogue()'");
+                    Invoke("TurnOffDialogue", 5);
+                    pendingDialogue = false; 
+                }
+                else if (pendingDialogue == false)
+                {
+                    TurnOffDialogue();
+                    Debug.Log("Closing cattatonicat dialgoue box");
+
+                    if (storeOnDisplay == false)
+                    {
+                        Debug.Log("Attempting to open store de Hell");
+                        storeDeHell.SetActive(true);
+                        storeOnDisplay = true; 
+                    }
+                    else if (storeOnDisplay == true)
+                    {
+                        Debug.Log("Attempting to close store de Hell");
+                        storeDeHell.SetActive(false);
+                        storeOnDisplay = false;
+                    }
+                }
+            }
         }
-        else if (Input.GetButtonDown("Interact") && playerInRange && dialogueOnDisplay)
-        {
-            // If player attempts to interact while the dialogue box is in display, close the dialogue box 
-            Debug.Log("Closing cattatonicat dialgoue box");    
-            dialogueBoxCattatonicat.SetActive(false);
-            dialogueOnDisplay = false;
-        }
-        else if (Input.GetButtonDown("Interact") && playerInRange && !pendingDialogue && !dialogueOnDisplay)
-        {
-            Debug.Log("Attempting to open store de Hell");
-            storeDeHell.SetActive(true);
-            GameManager.AtStore = true;
-            Debug.Log("Attempting to open store de Hell");
-            // TODO: Disable player movement while they are at the store 
-        }
-        else if (Input.GetButtonDown("Interact") && playerInRange && !pendingDialogue && !dialogueOnDisplay && GameManager.AtStore)
-        {
-            // If Magenta is using the "Interact" button while there is no pending dialogues, or dialogues on display, and she is at the store, close the Store de Hell shop canvas
-            storeDeHell.SetActive(false);
-            GameManager.AtStore = false;
-            Debug.Log("Attempting to close store de Hell");
-        }
+
+
+        //// Check if the playing is attempting to interact while being in range 
+        //if (Input.GetButtonDown("Interact") && playerInRange && pendingDialogue)
+        //{
+        //    CattatonicatDialogue();
+        //    Debug.Log("Calling 'CattatonicatDialogue()'");
+        //    Invoke("TurnOffDialogue", 5);
+        //}
+        //else if (Input.GetButtonDown("Interact") && playerInRange && dialogueOnDisplay && !pendingDialogue)
+        //{
+        //    // If player attempts to interact while the dialogue box is in display, close the dialogue box 
+        //    Debug.Log("Closing cattatonicat dialgoue box");    
+        //    dialogueBoxCattatonicat.SetActive(false);
+        //    dialogueOnDisplay = false;
+        //}
+        //else if (Input.GetButtonDown("Interact") && playerInRange && !pendingDialogue && !dialogueOnDisplay)
+        //{
+        //    storeDeHell.SetActive(true);
+        //    magentaAtStore = true;
+        //    Debug.Log("Attempting to open store de Hell");
+        //    // TODO: Disable player movement while they are at the store 
+        //}
+        //else if (Input.GetButtonDown("Interact") && magentaAtStore)
+        //{
+        //    // If Magenta is using the "Interact" button while there is no pending dialogues, or dialogues on display, and she is at the store, close the Store de Hell shop canvas
+        //    storeDeHell.SetActive(false);
+        //    Debug.Log("Attempting to close store de Hell");
+
+        //}
     }
 
     // Detect Player Enter & Exit State // 
@@ -101,7 +137,6 @@ public class CattatonicatManager : MonoBehaviour
             Debug.Log("Initiating Cattatonicat tutorial...");
             cattatonicatDialogueText.text = "Cattatonicat: Hello, Magenta! I have 666 souls for you!";
             dialogueBoxCattatonicat.SetActive(true);
-            dialogueOnDisplay = true;
             GameManager.SoulCount += 666;
             Debug.Log("+ 666 souls");
             completeCattatonicatTutorial = true;

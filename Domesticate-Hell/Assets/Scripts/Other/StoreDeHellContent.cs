@@ -22,7 +22,7 @@ public class StoreDeHellContent : MonoBehaviour
 
     private void Update()
     {
-        if(GameManager.AtStore)
+        if(CattatonicatManager.StoreOnDisplay)
         {
             ShowItems();
         }
