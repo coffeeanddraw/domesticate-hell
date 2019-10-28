@@ -12,20 +12,45 @@ public class Teleporter : MonoBehaviour
 
     private Transform destinationLocation;
     private Transform magentaLocation;
+    private bool playerInTeleporter = false;
 
     void Awake()
     {
         destinationLocation = destinationTeleporter.GetComponent<Transform>();
         magentaLocation = magenta.GetComponent<Transform>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
+        CheckInteraction();
+    }
+
+    void CheckInteraction()
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+            if(playerInTeleporter)
+            {
+                magentaLocation.position = destinationLocation.position;
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("Player has entered the teleportation area");
+            playerInTeleporter = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("Player has left the teleportation area");
+            playerInTeleporter = false;
+        }
     }
 }
