@@ -137,7 +137,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2725534293271853181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553010048b3a48546926f5f32c4fed68, type: 3}
+  m_Script: {fileID: 11500000, guid: 37fa33c8040d38046a925cdc1a7298a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 5761758874483971036, guid: eedf38fd7822bdb4baf5bf4d0751c273, type: 3}
+  storeDeHellCanvas: {fileID: 1858828159085903418, guid: 5ccb2011888bb134a8e4cfb91f57b4ca,
+    type: 3}
+  cattatonicatCanvas: {fileID: 3347070227107384398, guid: 28681ea08b835144c9de3c27c11cc95a,
+    type: 3}
+  cattatonicatDialogueText: {fileID: 0}
