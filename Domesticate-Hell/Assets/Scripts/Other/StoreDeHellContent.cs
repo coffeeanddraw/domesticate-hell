@@ -5,9 +5,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreDeHellContent : MonoBehaviour
 {
+    [SerializeField]
+    private Image InsufficientFundsNotification; 
+
     private string currentMenu = "Home";
 
     private GameObject[] tickets;
