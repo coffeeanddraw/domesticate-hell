@@ -12703,11 +12703,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 799263525}
-    - target: {fileID: 3347070227690095208, guid: 28681ea08b835144c9de3c27c11cc95a,
-        type: 3}
-      propertyPath: m_Name
-      value: 'DialogueBox '
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28681ea08b835144c9de3c27c11cc95a, type: 3}
 --- !u!1001 &3659791970040629422

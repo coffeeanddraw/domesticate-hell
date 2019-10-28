@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 3347070227690095213}
   - component: {fileID: 3347070227690095214}
   m_Layer: 5
-  m_Name: 'D4NDialogueBox '
+  m_Name: 'DialogueBox '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
