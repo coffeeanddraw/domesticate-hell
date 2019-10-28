@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿// Cattatonicat 2019 
+// For Domesticate Hell 
+// https://www.instagram.com/cattatonicat/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +18,14 @@ public class StoreDeHellContent : MonoBehaviour
         tickets = GameObject.FindGameObjectsWithTag("StoreItemTickets");
         humans = GameObject.FindGameObjectsWithTag("StoreItemFood");
         ShowItems();
+    }
+
+    private void Update()
+    {
+        if(CattatonicatManager.StoreOnDisplay)
+        {
+            ShowItems();
+        }
     }
 
     public void ShowItems()

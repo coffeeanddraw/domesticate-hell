@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿// Cattatonicat 2019 
+// For Domesticate Hell 
+// https://www.instagram.com/cattatonicat/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Animations;
@@ -10,10 +14,10 @@ public class D4NManager : MonoBehaviour
     // TODO: Complete D4N Dialogue Box // 
 
     [SerializeField]
-    private GameObject D4NCanvas;
+    private GameObject dialogueBoxD4N;
 
     [SerializeField]
-    private Text D4NDialogue;
+    private Text D4NDialogueText;
 
     [SerializeField]
     private AnimatorController defaultD4N;
@@ -45,7 +49,7 @@ public class D4NManager : MonoBehaviour
     {
         currentD4N = GetComponent<Animator>();
 
-        D4NCanvas.SetActive(false);
+        dialogueBoxD4N.SetActive(false);
     }
 
     void Update()
@@ -70,7 +74,7 @@ public class D4NManager : MonoBehaviour
         }
         else if (Input.GetButtonDown("Interact") && playerInteracting && D4NDialogueOn)
         {
-            D4NCanvas.SetActive(false);
+            dialogueBoxD4N.SetActive(false);
         }
     }
 
@@ -78,15 +82,15 @@ public class D4NManager : MonoBehaviour
 
     void D4NTutorial()
     {
-        D4NDialogue.text = "D4N: Hello, Magenta! I have 666 souls for you.";
+        D4NDialogueText.text = "D4N: Hello, Magenta! I have 666 souls for you.";
         GameManager.SoulCount += 666;
-        D4NCanvas.SetActive(true);
+        dialogueBoxD4N.SetActive(true);
         D4NDialogueOn = true;
     }
 
     void D4NDefault()
     {
-        D4NDialogue.text = "D4N: Hello, Magenta!";
+        D4NDialogueText.text = "D4N: Hello, Magenta!";
         D4NDialogueOn = true;
     }
 
@@ -115,7 +119,6 @@ public class D4NManager : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player is saying bye to D4N");
-            Debug.Log(completeD4NTutorial);
         }
     }
 }

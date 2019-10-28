@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Item\InteractionObject.cs" />
     <Compile Include="Assets\Scripts\Other\ButtonTransition.cs" />
     <Compile Include="Assets\Scripts\Other\Camera_Control.cs" />
+    <Compile Include="Assets\Scripts\Other\CattatonicatManager.cs" />
     <Compile Include="Assets\Scripts\Other\D4NManager.cs" />
     <Compile Include="Assets\Scripts\Other\GameManager.cs" />
     <Compile Include="Assets\Scripts\Other\HellishTime.cs" />

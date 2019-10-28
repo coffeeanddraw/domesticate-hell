@@ -137,7 +137,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2725534293271853181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553010048b3a48546926f5f32c4fed68, type: 3}
+  m_Script: {fileID: 11500000, guid: 37fa33c8040d38046a925cdc1a7298a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 5761758874483971036, guid: eedf38fd7822bdb4baf5bf4d0751c273, type: 3}
+  storeDeHell: {fileID: 0}
+  dialogueBoxCattatonicat: {fileID: 0}
+  cattatonicatDialogueText: {fileID: 0}

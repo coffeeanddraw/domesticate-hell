@@ -7,8 +7,8 @@ using UnityEngine;
 
 public class Player_Interaction : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject StoreDeHell;
+    //[SerializeField]
+    //private GameObject StoreDeHell;
 
     public GameObject InventoryUI;
     public GameObject currentInteractionObject = null;
@@ -18,14 +18,13 @@ public class Player_Interaction : MonoBehaviour
     public InteractionObject currentInteractionScript = null;
     public Player_Climb playerInteractionStair = null;
     public Inventory inventory;
-    public bool AtStore = false;
     public bool WithD4N = false;
-    public bool StoreOnDisplay = false;
+    //public bool StoreOnDisplay = false;
 
-    void Awake()
-    {
-        StoreDeHell.SetActive(false);
-    }
+    //void Awake()
+    //{
+    //    StoreDeHell.SetActive(false);
+    //}
 
     void Update()
     {
@@ -43,20 +42,20 @@ public class Player_Interaction : MonoBehaviour
                 
             }
             // Check if the player is at the store 
-            if (AtStore == true) // Player at the store 
-            {
-                // Check if the store is on display 
-                if (StoreOnDisplay == false) // Store is not on display 
-                {
-                    StoreDeHell.SetActive(true); // Turn on StoreDeHell canvas 
-                    StoreOnDisplay = true;
-                } 
-                else if (StoreOnDisplay == true) // Store is on display
-                {
-                    StoreDeHell.SetActive(false); // Turn off StoreDeHell Canvas
-                    StoreOnDisplay = false; 
-                }
-            } 
+            //if (GameManager.AtStore == true) // Player at the store 
+            //{
+            //    // Check if the store is on display 
+            //    if (StoreOnDisplay == false) // Store is not on display 
+            //    {
+            //        StoreDeHell.SetActive(true); // Turn on StoreDeHell canvas 
+            //        StoreOnDisplay = true;
+            //    } 
+            //    else if (StoreOnDisplay == true) // Store is on display
+            //    {
+            //        StoreDeHell.SetActive(false); // Turn off StoreDeHell Canvas
+            //        StoreOnDisplay = false; 
+            //    }
+            //} 
 
             if (currentInteractionObject)
             {
@@ -98,12 +97,12 @@ public class Player_Interaction : MonoBehaviour
     // Entering collider trigger
     void OnTriggerEnter2D(Collider2D x)
     {
-        if(x.CompareTag("StoreDeHell")) // At Store? 
-        {
-            Debug.Log("Entered Store de Hell!");
-            AtStore = true;
-        }
-        else if(x.CompareTag("D4N")) // With D4N? 
+        //if(x.CompareTag("StoreDeHell")) // At Store? 
+        //{
+        //    Debug.Log("Entered Store de Hell!");
+        //    GameManager.AtStore = true;
+        //}
+        if(x.CompareTag("D4N")) // With D4N? 
         {
             WithD4N = true;
             Debug.Log(WithD4N);
@@ -149,13 +148,13 @@ public class Player_Interaction : MonoBehaviour
     // Exiting collider trigger
     void OnTriggerExit2D(Collider2D x) 
     {
-        if (x.CompareTag("StoreDeHell")) // exiting Store de Hell?
-        {
-            // set AtStore to false if exiting Store de Hell
-            Debug.Log("Leaving Store de Hell!");
-            AtStore = false;
-        }
-        else if (x.CompareTag("D4N")) // saying bye to D4N?
+        //if (x.CompareTag("StoreDeHell")) // exiting Store de Hell?
+        //{
+        //    // set AtStore to false if exiting Store de Hell
+        //    Debug.Log("Leaving Store de Hell!");
+        //    GameManager.AtStore = false;
+        //}
+        if (x.CompareTag("D4N")) // saying bye to D4N?
         {
             WithD4N = false;
             Debug.Log(WithD4N); 
