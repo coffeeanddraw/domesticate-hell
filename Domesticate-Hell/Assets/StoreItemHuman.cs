@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿// Cattatonicat 2019 
+// For Domesticate Hell 
+// https://www.instagram.com/cattatonicat/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
