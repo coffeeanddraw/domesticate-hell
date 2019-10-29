@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\RoomSecurity.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\StoreDeHell\StoreItem.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\StoreItemTicket.cs" />
     <Compile Include="Assets\StoreItemHuman.cs" />
+    <Compile Include="Assets\Typewriter.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
