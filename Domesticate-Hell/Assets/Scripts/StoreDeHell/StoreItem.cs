@@ -16,4 +16,15 @@ public class StoreItem : MonoBehaviour
 
     [SerializeField]
     private bool food = false;
+
+    [SerializeField]
+    private int price;
+
+    void Purchase()
+    {
+        if (GameManager.SoulCount >= price)
+        {
+            GameManager.SoulCount -= price;
+        }
+    }
 }

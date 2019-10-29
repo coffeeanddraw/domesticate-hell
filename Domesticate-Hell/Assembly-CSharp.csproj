@@ -66,9 +66,7 @@
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Item\InteractionObject.cs" />
-    <Compile Include="Assets\Scripts\Other\ButtonTransition.cs" />
     <Compile Include="Assets\Scripts\Other\Camera_Control.cs" />
-    <Compile Include="Assets\Scripts\Other\CattatonicatManager.cs" />
     <Compile Include="Assets\Scripts\Other\D4NManager.cs" />
     <Compile Include="Assets\Scripts\Other\GameManager.cs" />
     <Compile Include="Assets\Scripts\Other\HellishTime.cs" />
@@ -77,14 +75,17 @@
     <Compile Include="Assets\Scripts\Other\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Other\RoundCameraPos.cs" />
     <Compile Include="Assets\Scripts\Other\SceneGuard.cs" />
-    <Compile Include="Assets\Scripts\Other\StoreDeHellContent.cs" />
-    <Compile Include="Assets\Scripts\Other\StoreItem.cs" />
     <Compile Include="Assets\Scripts\Other\Teleporter.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\Pet.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\PetMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Climb.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Interaction.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Moviment.cs" />
+    <Compile Include="Assets\Scripts\StoreDeHell\CattatonicatManager.cs" />
+    <Compile Include="Assets\Scripts\StoreDeHell\StoreDeHellContent.cs" />
+    <Compile Include="Assets\Scripts\StoreDeHell\StoreItem.cs" />
+    <Compile Include="Assets\Scripts\StoreDeHell\StoreItemTicket.cs" />
+    <Compile Include="Assets\StoreItemHuman.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/BatGirl/Documents/GameDev/domesticate-hell/Domesticate-Hell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

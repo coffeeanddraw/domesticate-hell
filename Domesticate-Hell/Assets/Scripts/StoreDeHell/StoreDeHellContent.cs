@@ -9,13 +9,10 @@ using UnityEngine.UI;
 
 public class StoreDeHellContent : MonoBehaviour
 {
-    [SerializeField]
-    private Image InsufficientFundsNotification; 
-
     private string currentMenu = "Home";
 
     private GameObject[] tickets;
-    private GameObject[] humans; 
+    private GameObject[] humans;
 
     private void Awake()
     {
