@@ -5,13 +5,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreDeHellContent : MonoBehaviour
 {
     private string currentMenu = "Home";
 
     private GameObject[] tickets;
-    private GameObject[] humans; 
+    private GameObject[] humans;
 
     private void Awake()
     {
