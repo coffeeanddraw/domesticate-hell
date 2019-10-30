@@ -43,12 +43,15 @@ public class StoreItemTicket : MonoBehaviour
 
     private bool unlocked = false;
 
+    private Transform petLocation;
     private AudioSource insufficientFundsVoice;
 
     public void Awake()
     {
 
         insufficientFundsVoice = InsufficientFundsUI.GetComponent<AudioSource>();
+        petLocation = petSpawnLocation.GetComponent<Transform>();
+        
         this.purchaseButton.SetActive(true);
         InsufficientFundsUI.SetActive(false);
         this.unlockedMask.SetActive(false);
@@ -98,7 +101,7 @@ public class StoreItemTicket : MonoBehaviour
 
     void InstantiatePet()
     {
-
+        Instantiate(pet, petLocation);
     }
 
     void playInsufficientFundsVoice()
