@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 4426160078360539437}
   - component: {fileID: 4426160078360539424}
   - component: {fileID: 4426160078360539436}
+  - component: {fileID: -53711282779272437}
   m_Layer: 0
-  m_Name: Cat
+  m_Name: MagmaCat
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 1623229591
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce4c4167980374743920b4308057a8a5, type: 3}
+  m_Sprite: {fileID: -3294595208424359725, guid: d66fd43405ad5e44baefda71e8d59f0a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,9 +99,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.035550833, y: -0.37106147}
   m_SpriteTilingProperty:
-    border: {x: 0.25, y: 0.3125, z: 0.1875, w: 0.375}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.5625, y: 1.3125}
     newSize: {x: 0.84, y: 0.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,3 +148,22 @@ MonoBehaviour:
   pet_gameObject: {fileID: 4426160078360539425}
   generateItemPrefab: {fileID: 3578157855180596343, guid: 0f1ca9000c9c67340b53a1000b272f3b,
     type: 3}
+--- !u!95 &-53711282779272437
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426160078360539425}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7e2b1ff3d120a4499592100e66ca437, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

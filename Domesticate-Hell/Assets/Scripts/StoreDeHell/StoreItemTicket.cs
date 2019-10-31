@@ -18,10 +18,10 @@ public class StoreItemTicket : MonoBehaviour
     private GameObject purchaseButton;
 
     [SerializeField]
-    private GameObject InsufficientFundsUI;
+    private GameObject insufficientFundsUI;
 
     [SerializeField]
-    private GameObject petSpawnLocation;
+    private GameObject thankYouForYourPurchaseUI;
 
     [SerializeField]
     private GameObject pet;
@@ -41,47 +41,55 @@ public class StoreItemTicket : MonoBehaviour
     [SerializeField]
     private int price;
 
+    [SerializeField]
+    private AudioClip[] thankYouSound = new AudioClip[2];
+
     private bool unlocked = false;
 
-    private Transform petLocation;
     private AudioSource insufficientFundsVoice;
 
-    public void Awake()
+    private AudioSource purchaseSoundEffect;
+
+    private AudioSource thankYouForYourPurchaseVoice;
+
+    void Awake()
     {
 
-        insufficientFundsVoice = InsufficientFundsUI.GetComponent<AudioSource>();
-        petLocation = petSpawnLocation.GetComponent<Transform>();
+        insufficientFundsVoice = insufficientFundsUI.GetComponent<AudioSource>();
+        thankYouForYourPurchaseVoice = thankYouForYourPurchaseUI.GetComponent<AudioSource>();
         
         this.purchaseButton.SetActive(true);
-        InsufficientFundsUI.SetActive(false);
+        insufficientFundsUI.SetActive(false);
+        thankYouForYourPurchaseUI.SetActive(false);
         this.unlockedMask.SetActive(false);
+        this.pet.SetActive(false);
     }
 
 
     public void Purchase()
     {
-        Debug.Log("Player is attempting to purchase the item");
+        Debug.Log("Player is attempting to purchase a ticket");
         if (GameManager.SoulCount >= price)
         {
             if (fireTicket)
             {
                 GameManager.HasFireKey = true;
-                InstantiatePet();
+                PurchasePets();
             }
             else if (shadowTicket)
             {
                 GameManager.HasShadowKey = true;
-                InstantiatePet();
+                PurchasePets();
             }
             else if (electricityTicket)
             {
                 GameManager.HasElectricityKey = true;
-                InstantiatePet();
+                PurchasePets();
             }
             else if (alchemyTicket)
             {
                 GameManager.HasAlchemyKey = true;
-                InstantiatePet();
+                PurchasePets();
             }
 
             this.unlockedMask.SetActive(true);
@@ -90,27 +98,48 @@ public class StoreItemTicket : MonoBehaviour
         }
         else if (GameManager.SoulCount < price )
         {
-            if (InsufficientFundsUI != null)
+            if (insufficientFundsUI != null)
             {
-                InsufficientFundsUI.SetActive(true);
-                playInsufficientFundsVoice();
-                Invoke("closeInsufficientFundsUI", 3);
+                insufficientFundsUI.SetActive(true);
+                PlayInsufficientFundsVoice();
+                Invoke("CloseInsufficientFundsUI", 3);
             }
         }
     }
 
     void InstantiatePet()
     {
-        Instantiate(pet, petLocation);
+        pet.SetActive(true);
     }
 
-    void playInsufficientFundsVoice()
+    void PlayInsufficientFundsVoice()
     {
         insufficientFundsVoice.Play();
     }
 
-    void closeInsufficientFundsUI()
+    void CloseInsufficientFundsUI()
     {
-        InsufficientFundsUI.SetActive(false);
+        insufficientFundsUI.SetActive(false);
+    }
+
+    void CloseThankYouForYourPurchaseUI()
+    {
+        thankYouForYourPurchaseUI.SetActive(false);
+    }
+
+    void PurchasePets()
+    {
+        InstantiatePet();
+        thankYouForYourPurchaseUI.SetActive(true);
+        PlayThankYouSound(0);
+        PlayThankYouSound(1);
+        Invoke("CloseThankYouForYourPurchaseUI", 3);
+    }
+
+    void PlayThankYouSound(int newClip)
+    {
+        thankYouForYourPurchaseVoice.PlayOneShot(thankYouSound[newClip]);
     }
 }
+
+
