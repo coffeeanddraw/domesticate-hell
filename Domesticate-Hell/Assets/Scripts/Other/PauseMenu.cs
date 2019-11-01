@@ -55,8 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void OptionsMenu()
     {
-        Time.timeScale = 0f;
-        PausedUI.SetActive(false);
-        OptionsUI.SetActive(true);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Options");
     }
 }
