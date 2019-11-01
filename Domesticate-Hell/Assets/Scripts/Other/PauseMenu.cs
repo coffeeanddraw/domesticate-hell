@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// J & Ishan 2019
+// Domesticate Hell
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,11 +10,21 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool PausedEvent = false;
 
-    public GameObject PausedUI;
+    [SerializeField]
+    private GameObject PausedUI;
+
+
+    void Awake()
+    {
+        PausedUI.SetActive(false);
+    }
+
+
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
             if (PausedEvent)
             {
@@ -27,6 +40,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         PausedUI.SetActive(false);
+        HellishTime.PauseTime = false;
         Time.timeScale = 1f;
         PausedEvent = false;
     }
@@ -34,6 +48,7 @@ public class PauseMenu : MonoBehaviour
     void Paused()
     {
         PausedUI.SetActive(true);
+        HellishTime.PauseTime = true;
         Time.timeScale = 0f;
         PausedEvent = true;
     }

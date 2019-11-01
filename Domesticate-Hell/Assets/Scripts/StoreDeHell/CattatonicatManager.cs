@@ -17,6 +17,16 @@ public class CattatonicatManager : MonoBehaviour
     [SerializeField]
     private Text cattatonicatDialogueText;
 
+    [Header("Store dé Hell Open & Close Sound Effects")]
+
+    [SerializeField]
+    private AudioClip storeOpenSound;
+
+    [SerializeField]
+    private AudioClip storeCloseSound;
+
+    private AudioSource storeAudioSource;
+    
     private bool completeCattatonicatTutorial = false;
     private bool playerInRange = false;
     private static bool storeOnDisplay = false;
@@ -38,6 +48,7 @@ public class CattatonicatManager : MonoBehaviour
     {
         storeDeHell.SetActive(false);
         dialogueBoxCattatonicat.SetActive(false);
+        storeAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -61,19 +72,14 @@ public class CattatonicatManager : MonoBehaviour
                 else if (pendingDialogue == false)
                 {
                     TurnOffDialogue();
-                    Debug.Log("Closing cattatonicat dialgoue box");
 
                     if (storeOnDisplay == false)
                     {
-                        Debug.Log("Attempting to open store de Hell");
-                        storeDeHell.SetActive(true);
-                        storeOnDisplay = true; 
+                        TurnOnStore();
                     }
                     else if (storeOnDisplay == true)
                     {
-                        Debug.Log("Attempting to close store de Hell");
-                        storeDeHell.SetActive(false);
-                        storeOnDisplay = false;
+                        TurnOffStore();
                     }
                 }
             }
@@ -122,4 +128,21 @@ public class CattatonicatManager : MonoBehaviour
     {
         dialogueBoxCattatonicat.SetActive(false);
     }
+
+    void TurnOnStore()
+    {
+        Debug.Log("Attempting to open store de Hell");
+        storeAudioSource.PlayOneShot(storeOpenSound);
+        storeDeHell.SetActive(true);
+        storeOnDisplay = true;
+    }
+
+    void TurnOffStore()
+    {
+        Debug.Log("Attempting to close store de Hell");
+        storeAudioSource.PlayOneShot(storeCloseSound);
+        storeDeHell.SetActive(false);
+        storeOnDisplay = false;
+    }
 }
+

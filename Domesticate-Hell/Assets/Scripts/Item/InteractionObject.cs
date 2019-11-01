@@ -26,33 +26,33 @@ public class InteractionObject : MonoBehaviour
         pet = new Pet();
     }
 
-    public void DoInteraction(GameObject playerInteracted)
-    {
-        if (this.CanGoToInventory)
-        {
-            inventory.Add(playerInteracted);
-            SetGameObject(playerInteracted);
-        }
-        if (this.CanOpenInventory)
-        {
-            ShowCanvas();
-        }
-        if (this.IsStair)
-        {
-            Debug.Log("Stair");
-        }
-        if (this.IsAnAnimal)
-        { 
-            fedPet(playerInteracted);
-        }
-    }
+    //public void DoInteraction(GameObject playerInteracted)
+    //{
+    //    if (this.CanGoToInventory)
+    //    {
+    //        inventory.Add(playerInteracted);
+    //        SetGameObject(playerInteracted);
+    //    }
+    //    if (this.CanOpenInventory)
+    //    {
+    //        ShowCanvas();
+    //    }
+    //    if (this.IsStair)
+    //    {
+    //        Debug.Log("Stair");
+    //    }
+    //    if (this.IsAnAnimal)
+    //    { 
+    //        fedPet(playerInteracted);
+    //    }
+    //}
 
-    private void fedPet(GameObject playerInteracted)
-    {
-        GameObject item = inventory.searchItem();
-        playerInteracted.GetComponent<Pet>().giveFoodToPet(item);
-        inventory.Remove(item);
-    }
+    //private void fedPet(GameObject playerInteracted)
+    //{
+    //    GameObject item = inventory.searchItem();
+    //    playerInteracted.GetComponent<Pet>().giveFoodToPet(item);
+    //    inventory.Remove(item);
+    //}
 
     private void SetGameObject(GameObject playerInteracted)
     {

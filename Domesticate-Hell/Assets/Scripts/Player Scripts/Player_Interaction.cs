@@ -57,14 +57,14 @@ public class Player_Interaction : MonoBehaviour
             //    }
             //} 
 
-            if (currentInteractionObject)
-            {
-                currentInteractionScript.DoInteraction(currentInteractionObject);
-            }
-            else if (gameObjectInventory)
-            {
-                currentInteractionScript.DoInteraction(gameObjectInventory);
-            } 
+            //if (currentInteractionObject)
+            //{
+            //    currentInteractionScript.DoInteraction(currentInteractionObject);
+            //}
+            //else if (gameObjectInventory)
+            //{
+            //    currentInteractionScript.DoInteraction(gameObjectInventory);
+            //} 
         }
 
         if(Input.GetKey("s") && onStair || Input.GetAxis("VerticalDown") >= 1 && onStair)
@@ -86,10 +86,10 @@ public class Player_Interaction : MonoBehaviour
             playerInteractionStair.StopClimbing2();
         }
 
-        if (Input.GetButtonDown("Cancel") || Input.GetButton("CloseInventory"))
-        {
-            currentInteractionScript.HideCanvas();
-        }
+        //if (Input.GetButtonDown("Cancel"))
+        //{
+        //    currentInteractionScript.HideCanvas();
+        //}
 
         
     }

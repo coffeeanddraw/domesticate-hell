@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StoreDeHellContent : MonoBehaviour
-{
+{ 
     private string currentMenu = "Home";
 
     private GameObject[] tickets;

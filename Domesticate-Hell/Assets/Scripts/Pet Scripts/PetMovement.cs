@@ -1,8 +1,5 @@
-﻿///////////////////////////////////
-///// ⚔🦂🐾BAT GIRL🐾🦂⚔ /////
-///////////////////////////////////
-//////DOMESTICATE HELL - 2019//////
-///////////////////////////////////
+﻿// Cattatonicat 2019 
+// Domesticate Hell
 
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +7,6 @@ using UnityEngine;
 
 public class PetMovement : MonoBehaviour
 {
-    Rigidbody2D rgbd2D;
 
     [SerializeField]
     private float speed;
@@ -18,12 +14,14 @@ public class PetMovement : MonoBehaviour
     [SerializeField]
     private float changeTime = 3.0f;
 
+    private Transform petLocation;
+
     private float timer;
     private int direction = 1;
 
     void Start()
     {
-        rgbd2D = GetComponent<Rigidbody2D>();
+        petLocation = GetComponent<Transform>();
         timer = changeTime;
     }
 
@@ -44,11 +42,15 @@ public class PetMovement : MonoBehaviour
             timer = changeTime;
         }
 
-        Vector2 position = rgbd2D.position;
+        petLocation.position = new Vector2(petLocation.position.x + Time.deltaTime * speed * direction, 0);
 
-        position.x = position.x + Time.deltaTime * speed * direction;
+        //Vector2 position = petLocation.position;
 
-        rgbd2D.MovePosition(position);
+        //petLocation.x = petLocation.x + Time.deltaTime * speed * direction; 
+
+        //position.x = position.x + Time.deltaTime * speed * direction;
+
+        //rgbd2D.MovePosition(position);
     }
 
 }

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private static bool hasShadowkey = false;
     private static bool hasElectricityKey = false;
     private static bool hasAlchemyKey = false;
+    private static string timeString = "";
 
     // getter & setter // 
 
@@ -55,6 +56,12 @@ public class GameManager : MonoBehaviour
     {
         get { return hasAlchemyKey; }
         set { hasAlchemyKey = value; }
+    }
+
+    public static string TimeString
+    {
+        get { return timeString; }
+        set { timeString = value; }
     }
 
     public static GameManager Instance
