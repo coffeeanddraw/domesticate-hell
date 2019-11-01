@@ -30,6 +30,17 @@ public class Pet : MonoBehaviour
     [SerializeField]
     private AudioClip mysticMinnowEating;
 
+    [Header("Pet Idle Animations")]
+    [SerializeField]
+    private RuntimeAnimatorController magmaCatIdleAnimation = null;
+
+    [Header("Pet Eating Animations")]
+    [SerializeField]
+    private RuntimeAnimatorController magmaCatEatingAnimation = null;
+
+    [SerializeField]
+    private Animator petAnimator = null;
+
     private AudioSource audioSource;
 
     private int petMaxManna = 999;
@@ -104,7 +115,7 @@ public class Pet : MonoBehaviour
                 {
                     GameManager.HumanCount -= 5;
                     petManna += 5;
-                    PickEatingSound();
+                    PickEating();
                 }
             }
         }
@@ -127,12 +138,14 @@ public class Pet : MonoBehaviour
         }
     }
 
-    void PickEatingSound()
+    void PickEating()
     {
         switch(petElement)
         {
             case "Fire":
                 audioSource.PlayOneShot(magmaCatEating);
+                petAnimator.runtimeAnimatorController = magmaCatEatingAnimation;
+                petAnimator.runtimeAnimatorController = magmaCatIdleAnimation;
                 break;
             case "Shadow":
                 audioSource.PlayOneShot(shadowWolfEating);
