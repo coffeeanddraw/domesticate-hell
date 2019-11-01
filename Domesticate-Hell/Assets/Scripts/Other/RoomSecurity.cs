@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RoomSecurity : MonoBehaviour
 {
     [SerializeField]
-    private GameObject warningUI;
+    private GameObject warningUI = null;
 
     [SerializeField]
     private GameObject gateCollider;

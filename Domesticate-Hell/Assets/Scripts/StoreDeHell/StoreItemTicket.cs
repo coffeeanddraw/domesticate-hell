@@ -5,6 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreItemTicket : MonoBehaviour
 {
@@ -44,6 +45,27 @@ public class StoreItemTicket : MonoBehaviour
     [SerializeField]
     private AudioClip[] thankYouSound = new AudioClip[2];
 
+    [Header("Key Image Game Objects ")]
+    [SerializeField]
+    private Image fireKey;
+    [SerializeField]
+    private Image shadowKey;
+    [SerializeField]
+    private Image electricityKey;
+    [SerializeField]
+    private Image alchemyKey;
+
+    [Header("Activated Key Sprites ")]
+    [SerializeField]
+    private Sprite fireKeyActivated;
+    [SerializeField]
+    private Sprite shadowKeyActivated;
+    [SerializeField]
+    private Sprite electricKeyActivated;
+    [SerializeField]
+    private Sprite alchemyKeyActivated;
+
+
     private bool unlocked = false;
 
     private AudioSource insufficientFundsVoice;
@@ -74,21 +96,25 @@ public class StoreItemTicket : MonoBehaviour
             if (fireTicket)
             {
                 GameManager.HasFireKey = true;
+                fireKey.sprite = fireKeyActivated;
                 PurchasePets();
             }
             else if (shadowTicket)
             {
                 GameManager.HasShadowKey = true;
+                shadowKey.sprite = shadowKeyActivated;
                 PurchasePets();
             }
             else if (electricityTicket)
             {
                 GameManager.HasElectricityKey = true;
+                electricityKey.sprite = electricKeyActivated;
                 PurchasePets();
             }
             else if (alchemyTicket)
             {
                 GameManager.HasAlchemyKey = true;
+                alchemyKey.sprite = alchemyKeyActivated;
                 PurchasePets();
             }
 

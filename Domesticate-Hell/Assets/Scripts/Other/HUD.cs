@@ -18,13 +18,17 @@ public class HUD : MonoBehaviour
     [SerializeField]
     private Text timeText;
 
+    [SerializeField]
+    private GameObject time;
+
     void Update()
     {
         PrintHUD();
+        time.SetActive(true);
     }
 
     void PrintHUD()
-    {
+    { 
         soulCountText.text = "Soul: " + GameManager.SoulCount.ToString();
         humanCountText.text = "Human: " + GameManager.HumanCount.ToString();
         timeText.text = HellishTime.FormatedTime;
