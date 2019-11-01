@@ -63,10 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\IntroManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Item\InteractionObject.cs" />
+    <Compile Include="Assets\Scripts\Menu\NextPanel.cs" />
+    <Compile Include="Assets\Scripts\Menu\TitleCanvas.cs" />
+    <Compile Include="Assets\Scripts\Menu\YourFutureIsProtected.cs" />
     <Compile Include="Assets\Scripts\Other\Camera_Control.cs" />
     <Compile Include="Assets\Scripts\Other\D4NManager.cs" />
     <Compile Include="Assets\Scripts\Other\GameManager.cs" />

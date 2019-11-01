@@ -1,0 +1,37 @@
+﻿// Cattatonicat 2019 
+// For Domesticate Hell 
+// https://www.instagram.com/cattatonicat/
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class YourFutureIsProtected : MonoBehaviour
+{
+    [SerializeField]
+    private AudioSource yourFutureIsProtectedAudioSource;
+
+    [SerializeField]
+    private AudioClip yourFutureIsProtectedAudioClip;
+
+    [SerializeField]
+    private GameObject mainMenuCanvas;
+
+    void Awake()
+    {
+        mainMenuCanvas.SetActive(false);
+        Invoke("PlayYFIPAudio", 1);
+        Invoke("TurnOnMainMenu", 8);
+    }
+
+    void PlayYFIPAudio()
+    {
+        Debug.Log("Playing 'Your Future Is Protected' Audio");
+        yourFutureIsProtectedAudioSource.PlayOneShot(yourFutureIsProtectedAudioClip);
+    }
+
+    void TurnOnMainMenu()
+    {
+        mainMenuCanvas.SetActive(true);
+    }
+}
