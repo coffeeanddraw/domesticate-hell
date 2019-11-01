@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.1.10f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,6 +52,9 @@
     <UnityVersion>2019.1.10f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.10f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -62,12 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\OptionsMenu.cs" />
-    <Compile Include="Assets\RoomSecurity.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Item\InteractionObject.cs" />
+    <Compile Include="Assets\Scripts\Menu\IntroManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\NextPanel.cs" />
+    <Compile Include="Assets\Scripts\Menu\TitleCanvas.cs" />
+    <Compile Include="Assets\Scripts\Menu\YourFutureIsProtected.cs" />
     <Compile Include="Assets\Scripts\Other\Camera_Control.cs" />
     <Compile Include="Assets\Scripts\Other\D4NManager.cs" />
     <Compile Include="Assets\Scripts\Other\GameManager.cs" />
@@ -75,20 +78,38 @@
     <Compile Include="Assets\Scripts\Other\HUD.cs" />
     <Compile Include="Assets\Scripts\Other\Menu_Script.cs" />
     <Compile Include="Assets\Scripts\Other\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Other\RoomSecurity.cs" />
     <Compile Include="Assets\Scripts\Other\RoundCameraPos.cs" />
     <Compile Include="Assets\Scripts\Other\SceneGuard.cs" />
     <Compile Include="Assets\Scripts\Other\Teleporter.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\Pet.cs" />
     <Compile Include="Assets\Scripts\Pet Scripts\PetMovement.cs" />
+    <Compile Include="Assets\Scripts\Pet Scripts\PetStats.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Climb.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Interaction.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Moviment.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\CattatonicatManager.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\StoreDeHellContent.cs" />
-    <Compile Include="Assets\Scripts\StoreDeHell\StoreItem.cs" />
+    <Compile Include="Assets\Scripts\StoreDeHell\StoreItemHuman.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\StoreItemTicket.cs" />
-    <Compile Include="Assets\StoreItemHuman.cs" />
-    <Compile Include="Assets\Typewriter.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ishan/Documents/GitHub/domesticate-hell/Domesticate-Hell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

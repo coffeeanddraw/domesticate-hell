@@ -69,3 +69,6 @@ TagManager:
   - name: Player
     uniqueID: 3879957411
     locked: 0
+  - name: OuterEnvironment
+    uniqueID: 3352930627
+    locked: 0

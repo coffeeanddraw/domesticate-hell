@@ -5,7 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class HellishTime : MonoBehaviour
 {
@@ -16,7 +16,27 @@ public class HellishTime : MonoBehaviour
     private int hours = 20;
     private int minutes = 0;
     private int seconds = 0;
-    private float calculateSeconds = 0; 
+    private float calculateSeconds = 0;
+
+    private static bool pauseTime = false;
+
+    private static string formatedTime = "";
+
+    public static bool PauseTime
+    {
+        get { return pauseTime; }
+        set { pauseTime = value; }
+    }
+
+    public static string FormatedTime
+    {
+        get { return formatedTime; }
+    }
+
+    void Awake()
+    {
+        clockText.gameObject.SetActive(true);
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,37 +46,41 @@ public class HellishTime : MonoBehaviour
         PrintTime();
     }
 
-    private void CalculateTime()
+    void CalculateTime()
     {
-        calculateSeconds += 1; 
-
-        // Change this statement to change how fast the time goes in game
-        if (calculateSeconds == 1)
+        if (!pauseTime)
         {
-            seconds += 1;
-            calculateSeconds = 0;
-        }
 
-        if (seconds == 60)
-        {
-            minutes += 1;
-            seconds = 0; 
-        }
+            calculateSeconds += 1;
 
-        if (minutes == 60)
-        {
-            hours += 1;
-            minutes = 0;
-        }
+            // Change this statement to change how fast the time goes in game
+            if (calculateSeconds == 1)
+            {
+                seconds += 1;
+                calculateSeconds = 0;
+            }
 
-        if (hours == 24)
-        {
-            days += 1;
-            hours = 0; 
+            if (seconds == 60)
+            {
+                minutes += 1;
+                seconds = 0;
+            }
+
+            if (minutes == 60)
+            {
+                hours += 1;
+                minutes = 0;
+            }
+
+            if (hours == 24)
+            {
+                days += 1;
+                hours = 0;
+            }
         }
     }
 
-    private void PrintTime()
+    void PrintTime()
     {
         string dag = days.ToString(); // day in dutch
         string uur = " "; // hours in dutch
@@ -125,9 +149,11 @@ public class HellishTime : MonoBehaviour
             case 23:
                 uur = "11";
                 break;
-        } 
+        }
 
         // Print current time to canvas
-        clockText.text = "Day: " + dag + "    " + uur + ":" + notulen + " " + amOrPm;
+        formatedTime = "Day: " + dag + "    " + uur + ":" + notulen + " " + amOrPm;
+        clockText.text = formatedTime;
+        GameManager.TimeString = formatedTime;
     }
 }   

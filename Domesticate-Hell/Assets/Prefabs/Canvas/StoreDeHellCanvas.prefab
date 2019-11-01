@@ -651,10 +651,10 @@ RectTransform:
   m_Father: {fileID: 2062944895555828579}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49.5, y: -129.78}
+  m_SizeDelta: {x: 99, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5325270206639652939
 CanvasRenderer:
@@ -818,10 +818,10 @@ RectTransform:
   m_Father: {fileID: 2062944895555828579}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 168.88, y: -129.78}
+  m_SizeDelta: {x: 99, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &129263826667944505
 CanvasRenderer:
@@ -896,7 +896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1858828159085903366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1024,10 +1024,10 @@ RectTransform:
   m_Father: {fileID: 2062944895555828579}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 168.88, y: -76.89}
+  m_SizeDelta: {x: 99, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7020431896532880931
 CanvasRenderer:
@@ -1078,12 +1078,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34eff653a33c64841ad639107f187c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storeItem: {fileID: 4674829770962477042}
+  storeItem: {fileID: 1937535535002981120}
   unlockedMask: {fileID: 9191963780921463800}
   purchaseButton: {fileID: 465027414238120303}
   InsufficientFundsUI: {fileID: 1069021805}
-  petSpawnLocation: {fileID: 0}
-  pet: {fileID: 860363588998664710, guid: 2f6436de4417f1141bc5d2e8227eb2b7, type: 3}
+  pet: {fileID: 0}
   fireTicket: 0
   shadowTicket: 0
   electricityTicket: 0
@@ -1231,7 +1230,7 @@ GameObject:
   - component: {fileID: 1309169738318681576}
   - component: {fileID: 3703204515860206821}
   - component: {fileID: 5246186420241427556}
-  - component: {fileID: 615067480}
+  - component: {fileID: 1333309838}
   m_Layer: 5
   m_Name: FuegoTicket
   m_TagString: StoreItemTickets
@@ -1255,10 +1254,10 @@ RectTransform:
   m_Father: {fileID: 2062944895555828579}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49.5, y: -24}
+  m_SizeDelta: {x: 99, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3703204515860206821
 CanvasRenderer:
@@ -1297,7 +1296,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &615067480
+--- !u!114 &1333309838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1313,8 +1312,7 @@ MonoBehaviour:
   unlockedMask: {fileID: 4265208363781287398}
   purchaseButton: {fileID: 2887694887380232203}
   InsufficientFundsUI: {fileID: 1069021805}
-  petSpawnLocation: {fileID: 0}
-  pet: {fileID: 4426160078360539425, guid: 027407f0787cb4c429414ea2721cae7e, type: 3}
+  pet: {fileID: 0}
   fireTicket: 1
   shadowTicket: 0
   electricityTicket: 0
@@ -1404,9 +1402,8 @@ GameObject:
   - component: {fileID: 5005972997486506943}
   - component: {fileID: 4823764574327738989}
   - component: {fileID: 4802822744508136907}
-  - component: {fileID: 291238331413141107}
   m_Layer: 5
-  m_Name: PurchaseButton
+  m_Name: Purchase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1510,39 +1507,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4823764574327738989}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1333309838}
+        m_MethodName: Purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &291238331413141107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2887694887380232203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 9
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 615067480}
-          m_MethodName: Purchase
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &3385294290033590486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,9 +1657,9 @@ RectTransform:
   m_Father: {fileID: 9214871540026859460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153.145, y: -14.5}
   m_SizeDelta: {x: 93, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5224320744785768921
@@ -1850,9 +1828,9 @@ RectTransform:
   m_Father: {fileID: 9214871540026859460}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153.145, y: -36.114998}
   m_SizeDelta: {x: 93.21, y: 14.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7686375501955630577
@@ -2127,9 +2105,9 @@ RectTransform:
   m_Father: {fileID: 107131513416957891}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 65.604996, y: -7.115}
   m_SizeDelta: {x: 23, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2739200964915000108
@@ -2279,10 +2257,10 @@ RectTransform:
   m_Father: {fileID: 2062944895555828579}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49.5, y: -76.89}
+  m_SizeDelta: {x: 99, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &641790313717113028
 CanvasRenderer:
@@ -2333,12 +2311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34eff653a33c64841ad639107f187c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storeItem: {fileID: 9169044445832774011}
+  storeItem: {fileID: 4655710011603739075}
   unlockedMask: {fileID: 8969864365559928737}
   purchaseButton: {fileID: 2426762486142286949}
   InsufficientFundsUI: {fileID: 1069021805}
-  petSpawnLocation: {fileID: 0}
-  pet: {fileID: 5795044975263347119, guid: 8bc3703cc587406449f0399c4e6e7566, type: 3}
+  pet: {fileID: 0}
   fireTicket: 0
   shadowTicket: 0
   electricityTicket: 1
@@ -2734,10 +2711,10 @@ RectTransform:
   m_Father: {fileID: 2062944895555828579}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 168.88, y: -24}
+  m_SizeDelta: {x: 99, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3545312131501220734
 CanvasRenderer:
@@ -2788,12 +2765,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34eff653a33c64841ad639107f187c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storeItem: {fileID: 7979097110390830257}
+  storeItem: {fileID: 7489688204320910935}
   unlockedMask: {fileID: 8912341098249105073}
   purchaseButton: {fileID: 6407784211746234444}
   InsufficientFundsUI: {fileID: 1069021805}
-  petSpawnLocation: {fileID: 0}
-  pet: {fileID: 6550624948471795349, guid: a09e814c6bd387243b713662530e80fe, type: 3}
+  pet: {fileID: 0}
   fireTicket: 0
   shadowTicket: 1
   electricityTicket: 0
@@ -2837,9 +2813,9 @@ RectTransform:
   m_Father: {fileID: 9214871540026859460}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153.145, y: -120.740005}
   m_SizeDelta: {x: 210.49, y: 155.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1969334209580553457
@@ -2908,9 +2884,9 @@ RectTransform:
   m_Father: {fileID: 107131513416957891}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 30.105, y: -7.115}
   m_SizeDelta: {x: 28, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1519230126927196314

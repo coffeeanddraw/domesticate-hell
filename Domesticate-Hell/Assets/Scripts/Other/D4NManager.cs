@@ -5,7 +5,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations;
 using UnityEngine.UI;
 
 public class D4NManager : MonoBehaviour
@@ -20,10 +19,10 @@ public class D4NManager : MonoBehaviour
     private Text D4NDialogueText;
 
     [SerializeField]
-    private AnimatorController defaultD4N;
+    private RuntimeAnimatorController defaultD4N;
 
     [SerializeField]
-    private AnimatorController notificationD4N;
+    private RuntimeAnimatorController notificationD4N;
 
     private Animator currentD4N;
     private bool completeD4NTutorial = false;

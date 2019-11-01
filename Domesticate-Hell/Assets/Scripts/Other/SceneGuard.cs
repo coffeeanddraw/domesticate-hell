@@ -1,6 +1,9 @@
-﻿///////////////////////////////////
-///// ⚔🦂🐾BAT GIRL🐾🦂⚔ /////
-///////////////////////////////////
+﻿// Cattatonicat 2019 
+// For Domesticate Hell 
+// https://www.instagram.com/cattatonicat/
+// Cattatonicat 2019 
+// For Domesticate Hell 
+// https://www.instagram.com/cattatonicat/
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,18 +11,10 @@ using UnityEngine.SceneManagement;
 public class SceneGuard : MonoBehaviour
 {
     [SerializeField]
-    string sceneName = "";
-   
-    void Update()
-    {
-        if (Input.GetButtonDown("Interact") || Input.GetButton("Interact"))
-        {
-            SwitchScene();
-        }
-    }
-
+    private string sceneName = "";
+  
     public void SwitchScene()
-    {
+    { 
         SceneManager.LoadScene(sceneName);
     }
 }

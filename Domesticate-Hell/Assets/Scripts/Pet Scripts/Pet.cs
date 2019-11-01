@@ -1,98 +1,161 @@
-﻿using System;
+﻿// Angleo & J 
+// Domesticate Hell 2019
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Pet : MonoBehaviour
 {
-    private enum pet_Type {Shadow, Fire, Electricity, Alchemy};
-    public int pet_hunger;
-    public int pet_health;
-    public int pet_experience;
-    public int pet_level;
-    public GameObject pet_gameObject;
+    [SerializeField]
+    private GameObject pet;
 
-    float timePerHunger;
-    float timeGenerateItem;
+    [Header("Pet Element: Fire / Shadow / Electricity / Alchemy")]
+    [SerializeField]
+    private string petElement = "";
 
+    [SerializeField]
+    private GameObject petStatUI;
 
-    public GameObject generateItemPrefab;
+    [Header("Pet Eating Sound Effects")]
+    [SerializeField]
+    private AudioClip magmaCatEating;
+    [SerializeField]
+    private AudioClip shadowWolfEating;
+    [SerializeField]
+    private AudioClip brightBunEating;
+    [SerializeField]
+    private AudioClip mysticMinnowEating;
 
-    void Start()
+    [Header("Pet Idle Animations")]
+    [SerializeField]
+    private RuntimeAnimatorController magmaCatIdleAnimation = null;
+
+    [Header("Pet Eating Animations")]
+    [SerializeField]
+    private RuntimeAnimatorController magmaCatEatingAnimation = null;
+
+    [SerializeField]
+    private Animator petAnimator = null;
+
+    private AudioSource audioSource;
+
+    private int petMaxManna = 999;
+
+    private int petManna = 999;
+    private int petChangeInManna;
+
+    private TextMeshProUGUI petStatsTMP;
+
+    private int hungerCounter = 0;
+    private int soulCounter = 0;
+
+    private bool playerInRange;
+
+    void Awake()
     {
-        this.pet_hunger = 5;
-        this.pet_health = 100;
-        this.pet_experience = 0;
-        this.pet_level = 1;
+        pet.SetActive(false);
+
+        petStatsTMP = petStatUI.GetComponent<TextMeshProUGUI>();
+
+        petStatsTMP.SetText("{0}/{1}", petManna, petMaxManna);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        timePerHunger += Time.deltaTime;
-        timeGenerateItem += Time.deltaTime;
-
-        if (timePerHunger > 10)
-        {
-            damagePerTime();
-            resetTimePerHunger();
-        }
-
-        if (timeGenerateItem > 10)
-        {
-            generateItem();
-            resetTimeGenerateItem();
-        }
-
-        checkPetHealth();
-        checkPetLevel();
-
+        UpdateHunger();
+        UpdateSoul();
+        CheckPetDeath();
+        CheckInteraction();
     }
 
-    private void resetTimeGenerateItem()
+    void UpdateHunger()
     {
-        this.timeGenerateItem = 0f;
+        hungerCounter += 1;
+
+        if (hungerCounter == 44)
+        {
+            petManna -= 1;
+            hungerCounter = 0;
+        }
+
+        petStatsTMP.SetText("{0}/{1}", petManna, petMaxManna);
     }
 
-    private void checkPetLevel()
+    void UpdateSoul()
     {
-        if (this.pet_experience == 100)
+        soulCounter += 1; 
+        if (soulCounter == 22)
         {
-            this.pet_level += 1;
-            this.pet_experience = 0;
+            GameManager.SoulCount += 2;
+            soulCounter = 0;
         }
     }
 
-    private void checkPetHealth()
+    void CheckPetDeath()
     {
-        if (this.pet_health <= 0)
+        if(this.petManna == 0)
         {
-            this.gameObject.SetActive(false);
+            pet.SetActive(false);
         }
     }
 
-    void resetTimePerHunger()
+    void CheckInteraction()
     {
-        this.timePerHunger = 0f;
+        if (Input.GetButtonDown("Interact"))
+        {
+            if(playerInRange)
+            {
+                if(GameManager.HumanCount >= 5)
+                {
+                    GameManager.HumanCount -= 5;
+                    petManna += 5;
+                    PickEating();
+                }
+            }
+        }
     }
 
-    void damagePerTime()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        this.pet_health = this.pet_health - this.pet_hunger;
+        if(other.CompareTag("Player"))
+        {
+            playerInRange = true;
+            Debug.Log("Magenta is with a pet");
+        }
     }
 
-    public void giveFoodToPet(GameObject food)
+    void OnTriggerExit2D(Collider2D other)
     {
-        int health = food.GetComponent<InteractionObject>().health;
-        int xp = food.GetComponent<InteractionObject>().xp;
-
-        this.pet_health += health;
-        this.pet_experience += xp;
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false; 
+        }
     }
 
-    void generateItem()
+    void PickEating()
     {
-        Vector3 x = new Vector3(pet_gameObject.transform.position.x - 1, pet_gameObject.transform.position.y, pet_gameObject.transform.position.z - 1);
-
-        Instantiate(generateItemPrefab, x, Quaternion.identity);
+        switch(petElement)
+        {
+            case "Fire":
+                audioSource.PlayOneShot(magmaCatEating);
+                petAnimator.runtimeAnimatorController = magmaCatEatingAnimation;
+                petAnimator.runtimeAnimatorController = magmaCatIdleAnimation;
+                break;
+            case "Shadow":
+                audioSource.PlayOneShot(shadowWolfEating);
+                break;
+            case "Electricity":
+                audioSource.PlayOneShot(brightBunEating);
+                break;
+            case "Alchemy":
+                audioSource.PlayOneShot(mysticMinnowEating);
+                break;
+        }
     }
 }
