@@ -5132,6 +5132,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1452232933600695511}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1281361935
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281361934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1befc6adf8ed4a74595c761dc27abdfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1281859566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3940322601031495472, guid: d6a37734e296c2b46888b3b8726a35ac,
@@ -8766,6 +8785,11 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 3075472474953899561, guid: 5be76fa6ea480634bb1deb156e16f38c,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 3965671553460252812, guid: 5be76fa6ea480634bb1deb156e16f38c,
         type: 3}
       propertyPath: storeDeHell
@@ -8934,6 +8958,11 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 6697423653815735345, guid: 5fed73c2067a2464383c6d3ce46ef42a,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 706685651725502563, guid: 5fed73c2067a2464383c6d3ce46ef42a,
         type: 3}
       propertyPath: magmaCatEatingAnimation
@@ -9264,6 +9293,11 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 1096290391394851765, guid: ebf5efcf04ab2ea43b40cb06aded855c,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1452232934601039064, guid: ebf5efcf04ab2ea43b40cb06aded855c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9319,6 +9353,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1452232934601039047, guid: ebf5efcf04ab2ea43b40cb06aded855c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5157148192127017810, guid: 66f6c785c0a08034e8c53a4be6afb847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf5efcf04ab2ea43b40cb06aded855c, type: 3}
 --- !u!4 &2542026349127544588 stripped
@@ -9553,6 +9593,11 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 3692756894229509533, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 4314852644446349686, guid: 74207d88238e1674d98bf253c38ddd9b,
         type: 3}
       propertyPath: magmaCatEatingAnimation
@@ -9918,6 +9963,11 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 6369597776323782073, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1648623589, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
       propertyPath: warningUI
       value: 
@@ -10054,6 +10104,11 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 6089265211741695387, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 9072170121734408594, guid: bea02a32dd8ba4446b9eb93c80f2c004,
         type: 3}
       propertyPath: magmaCatEatingAnimation

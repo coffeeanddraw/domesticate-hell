@@ -14,14 +14,20 @@ public class Teleporter : MonoBehaviour
     [SerializeField]
     private GameObject magenta;
 
+    [SerializeField]
+    private AudioClip teleporterSoundEffect;
+
     private Transform destinationLocation;
     private Transform magentaLocation;
     private bool playerInTeleporter = false;
+
+    private AudioSource magentaAudioSource;
 
     void Awake()
     {
         destinationLocation = destinationTeleporter.GetComponent<Transform>();
         magentaLocation = magenta.GetComponent<Transform>();
+        magentaAudioSource = magenta.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,6 +41,7 @@ public class Teleporter : MonoBehaviour
         {
             if(playerInTeleporter)
             {
+                magentaAudioSource.PlayOneShot(teleporterSoundEffect);
                 magentaLocation.position = destinationLocation.position;
             }
         }
