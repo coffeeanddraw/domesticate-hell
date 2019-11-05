@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925175878677751932}
   - component: {fileID: 1925175878677751933}
+  - component: {fileID: 273445333687046192}
   m_Layer: 0
   m_Name: ShadowRoom
   m_TagString: Enviroment
@@ -341,6 +342,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &273445333687046192
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925175878677751930}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3702557554726480752
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +490,11 @@ MonoBehaviour:
   shadowWolfEating: {fileID: 8300000, guid: 80ee8699f097df340add9371387bf38e, type: 3}
   brightBunEating: {fileID: 8300000, guid: 09b0aad8f0e05f047a932cc85a19c35e, type: 3}
   mysticMinnowEating: {fileID: 8300000, guid: 9ea0f602f730c324383887c8c33ff2ee, type: 3}
+  magmaCatIdleAnimation: {fileID: 9100000, guid: e7e2b1ff3d120a4499592100e66ca437,
+    type: 2}
+  magmaCatEatingAnimation: {fileID: 9100000, guid: c86838f1928422a4e82faaf3a7221aa9,
+    type: 2}
+  petAnimator: {fileID: 6559654286145766792}
 --- !u!82 &4174993250196073128
 AudioSource:
   m_ObjectHideFlags: 0
@@ -755,6 +780,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeleporterPurple
       objectReference: {fileID: 0}
+    - target: {fileID: -8803143911806446271, guid: 3308341d5de75eb41ba7147a0d81e305,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1088520538212564960, guid: 3308341d5de75eb41ba7147a0d81e305,
         type: 3}
       propertyPath: m_LocalPosition.x

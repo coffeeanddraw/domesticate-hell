@@ -591,6 +591,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!95 &789351284630660203
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706685652123420378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3065176341327894686
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +938,11 @@ MonoBehaviour:
   shadowWolfEating: {fileID: 8300000, guid: 80ee8699f097df340add9371387bf38e, type: 3}
   brightBunEating: {fileID: 8300000, guid: 09b0aad8f0e05f047a932cc85a19c35e, type: 3}
   mysticMinnowEating: {fileID: 8300000, guid: 9ea0f602f730c324383887c8c33ff2ee, type: 3}
+  magmaCatIdleAnimation: {fileID: 9100000, guid: e7e2b1ff3d120a4499592100e66ca437,
+    type: 2}
+  magmaCatEatingAnimation: {fileID: 9100000, guid: c86838f1928422a4e82faaf3a7221aa9,
+    type: 2}
+  petAnimator: {fileID: 706685651725502560}
 --- !u!1001 &137442879192581860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,6 +955,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeleporterYellow
       objectReference: {fileID: 0}
+    - target: {fileID: 6708759008826757845, guid: 70facc37ba3d52d4ca885f072115a1bd,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 587417700171563071, guid: 70facc37ba3d52d4ca885f072115a1bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,6 +1020,12 @@ PrefabInstance:
 --- !u!4 &706685652123420379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 587417700171563071, guid: 70facc37ba3d52d4ca885f072115a1bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 137442879192581860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &706685652123420378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 587417700171563070, guid: 70facc37ba3d52d4ca885f072115a1bd,
     type: 3}
   m_PrefabInstance: {fileID: 137442879192581860}
   m_PrefabAsset: {fileID: 0}

@@ -584,6 +584,7 @@ GameObject:
   - component: {fileID: 7351686046748986762}
   - component: {fileID: 2727783121485390030}
   - component: {fileID: 7351686046748986763}
+  - component: {fileID: 7351686046748986767}
   m_Layer: 0
   m_Name: BrightBun
   m_TagString: Untagged
@@ -699,6 +700,11 @@ MonoBehaviour:
   shadowWolfEating: {fileID: 8300000, guid: 80ee8699f097df340add9371387bf38e, type: 3}
   brightBunEating: {fileID: 8300000, guid: 09b0aad8f0e05f047a932cc85a19c35e, type: 3}
   mysticMinnowEating: {fileID: 8300000, guid: 9ea0f602f730c324383887c8c33ff2ee, type: 3}
+  magmaCatIdleAnimation: {fileID: 9100000, guid: e7e2b1ff3d120a4499592100e66ca437,
+    type: 2}
+  magmaCatEatingAnimation: {fileID: 9100000, guid: c86838f1928422a4e82faaf3a7221aa9,
+    type: 2}
+  petAnimator: {fileID: 7351686046748986767}
 --- !u!82 &7351686046748986763
 AudioSource:
   m_ObjectHideFlags: 0
@@ -795,6 +801,44 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &7351686046748986767
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770348111698191192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &3034791462819716307
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7351686046085540962}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3015330459539978314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,6 +851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeleporterRed
       objectReference: {fileID: 0}
+    - target: {fileID: 8195918542851153395, guid: 5b6e47d9636a3fb4abfd386aebaf4dd7,
+        type: 3}
+      propertyPath: teleporterSoundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 5755306280458933289, guid: 5b6e47d9636a3fb4abfd386aebaf4dd7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -864,6 +913,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b6e47d9636a3fb4abfd386aebaf4dd7, type: 3}
+--- !u!1 &7351686046085540962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5755306280458933288, guid: 5b6e47d9636a3fb4abfd386aebaf4dd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3015330459539978314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7351686046085540963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5755306280458933289, guid: 5b6e47d9636a3fb4abfd386aebaf4dd7,

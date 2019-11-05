@@ -117,6 +117,7 @@ public class D4NManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            currentD4N.runtimeAnimatorController = defaultD4N;
             Debug.Log("Player is saying bye to D4N");
         }
     }

@@ -17,6 +17,13 @@ public class Teleporter : MonoBehaviour
     [SerializeField]
     private AudioClip teleporterSoundEffect;
 
+    [SerializeField]
+    private RuntimeAnimatorController teleporterIdle = null;
+
+    [SerializeField]
+    private RuntimeAnimatorController teleporterActivated = null;
+
+    private Animator currentTeleporterAnim;
     private Transform destinationLocation;
     private Transform magentaLocation;
     private bool playerInTeleporter = false;
@@ -25,6 +32,7 @@ public class Teleporter : MonoBehaviour
 
     void Awake()
     {
+        currentTeleporterAnim = GetComponent<Animator>();
         destinationLocation = destinationTeleporter.GetComponent<Transform>();
         magentaLocation = magenta.GetComponent<Transform>();
         magentaAudioSource = magenta.GetComponent<AudioSource>();
@@ -52,6 +60,7 @@ public class Teleporter : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Debug.Log("Player has entered the teleportation area");
+            currentTeleporterAnim.runtimeAnimatorController = teleporterActivated;
             playerInTeleporter = true;
         }
     }
@@ -61,6 +70,7 @@ public class Teleporter : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Debug.Log("Player has left the teleportation area");
+            currentTeleporterAnim.runtimeAnimatorController = teleporterIdle;
             playerInTeleporter = false;
         }
     }

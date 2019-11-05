@@ -1,4 +1,4 @@
-﻿// Angleo & J 
+﻿// Angelo & J 
 // Domesticate Hell 2019
 
 using System;
@@ -11,24 +11,24 @@ using TMPro;
 public class Pet : MonoBehaviour
 {
     [SerializeField]
-    private GameObject pet;
+    private GameObject pet = null;
 
     [Header("Pet Element: Fire / Shadow / Electricity / Alchemy")]
     [SerializeField]
     private string petElement = "";
 
     [SerializeField]
-    private GameObject petStatUI;
+    private GameObject petStatUI = null;
 
     [Header("Pet Eating Sound Effects")]
     [SerializeField]
-    private AudioClip magmaCatEating;
+    private AudioClip magmaCatEating = null;
     [SerializeField]
-    private AudioClip shadowWolfEating;
+    private AudioClip shadowWolfEating = null;
     [SerializeField]
-    private AudioClip brightBunEating;
+    private AudioClip brightBunEating = null;
     [SerializeField]
-    private AudioClip mysticMinnowEating;
+    private AudioClip mysticMinnowEating = null;
 
     [Header("Pet Idle Animations")]
     [SerializeField]
@@ -66,6 +66,12 @@ public class Pet : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    void FixedUpdate()
+    {
+        UpdateHunger();
+        UpdateSoul();
+    }
+
     void Update()
     {
         UpdateHunger();
@@ -78,7 +84,7 @@ public class Pet : MonoBehaviour
     {
         hungerCounter += 1;
 
-        if (hungerCounter == 44)
+        if (hungerCounter == 40)
         {
             petManna -= 1;
             hungerCounter = 0;
@@ -90,7 +96,7 @@ public class Pet : MonoBehaviour
     void UpdateSoul()
     {
         soulCounter += 1; 
-        if (soulCounter == 22)
+        if (soulCounter == 13)
         {
             GameManager.SoulCount += 2;
             soulCounter = 0;
