@@ -6857,12 +6857,12 @@ PrefabInstance:
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.625
+      value: 16.64
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5625
+      value: -2.5525
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
@@ -9086,6 +9086,16 @@ PrefabInstance:
       propertyPath: teleporterUsedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
+    - target: {fileID: 6369597776323782073, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: teleporterIdle
+      value: 
+      objectReference: {fileID: 9100000, guid: 3dacb4a1f40ad49439b5d234c0f2e2b4, type: 2}
+    - target: {fileID: 6369597776323782073, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: teleporterActivated
+      value: 
+      objectReference: {fileID: 9100000, guid: 606dab5fc0ff5384d8e1780a79c65a35, type: 2}
     - target: {fileID: 1648623589, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
       propertyPath: warningUI
       value: 
@@ -9098,6 +9108,12 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1281859571}
+    - target: {fileID: 7351686046085540964, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1633425141339654991, guid: acb78438744ffe94cacdd64ca58b811a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
 --- !u!1 &7351686046748986761 stripped
