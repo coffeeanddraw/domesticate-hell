@@ -16,11 +16,17 @@ public class Teleporter : MonoBehaviour
 
     [Header("Sound Effects")]
 
+    //[SerializeField]
+    //private AudioClip[] teleporterSoundEffects = new AudioClip[1]; // Used to store all of the SoundFX for the teleporter; Also must have at least one spot
+
     [SerializeField]
     private AudioClip teleporterActivatedAudio;
 
     [SerializeField]
     private AudioClip teleporterUsedAudio;
+
+    [SerializeField]
+    private AudioClip teleporterDeactivatedAudio;
 
     [Header("Animator Controllers")]
 
@@ -33,7 +39,10 @@ public class Teleporter : MonoBehaviour
     private Animator currentTeleporterAnim;
     private Transform destinationLocation;
     private Transform magentaLocation;
+    private Teleporter destinationTeleporterBrain; // Being used for sound fix
     private bool playerInTeleporter = false;
+
+    public bool IsBeingTeleported { private get; set; }  // Being used for sound fix
 
     private AudioSource magentaAudioSource;
 
@@ -41,8 +50,11 @@ public class Teleporter : MonoBehaviour
     {
         currentTeleporterAnim = GetComponent<Animator>();
         destinationLocation = destinationTeleporter.GetComponent<Transform>();
+        destinationTeleporterBrain = destinationTeleporter.GetComponent<Teleporter>();
         magentaLocation = magenta.GetComponent<Transform>();
         magentaAudioSource = magenta.GetComponent<AudioSource>();
+
+        IsBeingTeleported = false;
     }
 
     void Update()
@@ -54,11 +66,14 @@ public class Teleporter : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact"))
         {
-            if(playerInTeleporter)
+            if (playerInTeleporter)
             {
+                destinationTeleporterBrain.IsBeingTeleported = true;
                 PlayerUsingTeleporter();
             }
         }
+        else
+            destinationTeleporterBrain.IsBeingTeleported = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -80,7 +95,13 @@ public class Teleporter : MonoBehaviour
     void PlayerEnteringTeleporter()
     {
         Debug.Log("Player has entered a teleporter");
-        magentaAudioSource.PlayOneShot(teleporterActivatedAudio);
+
+        // IF player is being teleported onto this teleporter THEN don't play the teleporter activation sound
+        if (IsBeingTeleported == false)
+        {
+            magentaAudioSource.PlayOneShot(teleporterActivatedAudio);
+        }
+
         currentTeleporterAnim.runtimeAnimatorController = teleporterActivated;
         playerInTeleporter = true;
     }
@@ -90,11 +111,18 @@ public class Teleporter : MonoBehaviour
         Debug.Log("Player has left the teleportation area");
         currentTeleporterAnim.runtimeAnimatorController = teleporterIdle;
         playerInTeleporter = false;
+
+        // Example implementation of a SFX that would play when the player steps off the teleporter, but not when they're being teleported off of it
+        if (IsBeingTeleported == false)
+        {
+            magentaAudioSource.PlayOneShot(teleporterDeactivatedAudio);
+        }
     }
 
     void PlayerUsingTeleporter()
     {
         magentaAudioSource.PlayOneShot(teleporterUsedAudio);
         magentaLocation.position = destinationLocation.position;
+        IsBeingTeleported = true;
     }
 }

@@ -4874,16 +4874,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
-        type: 3}
-      propertyPath: dialogueBoxD4N
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1409006245}
-    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+      objectReference: {fileID: -7394773797869847094, guid: b5fab56b4e3c5224dadf70779136f7d1,
         type: 3}
-      propertyPath: D4NDialogueText
-      value: 
-      objectReference: {fileID: 920059715}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
         type: 3}
       propertyPath: destinationTeleporter
@@ -4914,6 +4921,21 @@ PrefabInstance:
       propertyPath: teleporterUsedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
+    - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: teleporterDeactivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
+    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: dialogueBoxD4N
+      value: 
+      objectReference: {fileID: 1409006245}
+    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: D4NDialogueText
+      value: 
+      objectReference: {fileID: 920059715}
     - target: {fileID: 1657714142, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
       propertyPath: warningUI
       value: 
@@ -4922,23 +4944,6 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 936091458}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -7394773797869847094, guid: b5fab56b4e3c5224dadf70779136f7d1,
-        type: 3}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_Size.x
-      value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5625
-      objectReference: {fileID: 0}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
 --- !u!224 &1250711449 stripped
@@ -6857,12 +6862,12 @@ PrefabInstance:
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.64
+      value: 16.625
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5525
+      value: -2.5625
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
@@ -8246,6 +8251,11 @@ PrefabInstance:
       propertyPath: teleporterUsedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
+    - target: {fileID: 3075472474953899561, guid: 5be76fa6ea480634bb1deb156e16f38c,
+        type: 3}
+      propertyPath: teleporterDeactivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
     - target: {fileID: 3965671553460252812, guid: 5be76fa6ea480634bb1deb156e16f38c,
         type: 3}
       propertyPath: storeDeHell
