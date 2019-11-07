@@ -14,8 +14,15 @@ public class Teleporter : MonoBehaviour
     [SerializeField]
     private GameObject magenta;
 
+    [Header("Sound Effects")]
+
     [SerializeField]
-    private AudioClip teleporterSoundEffect;
+    private AudioClip teleporterActivatedAudio;
+
+    [SerializeField]
+    private AudioClip teleporterUsedAudio;
+
+    [Header("Animator Controllers")]
 
     [SerializeField]
     private RuntimeAnimatorController teleporterIdle = null;
@@ -49,8 +56,7 @@ public class Teleporter : MonoBehaviour
         {
             if(playerInTeleporter)
             {
-                magentaAudioSource.PlayOneShot(teleporterSoundEffect);
-                magentaLocation.position = destinationLocation.position;
+                PlayerUsingTeleporter();
             }
         }
     }
@@ -59,9 +65,7 @@ public class Teleporter : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("Player has entered the teleportation area");
-            currentTeleporterAnim.runtimeAnimatorController = teleporterActivated;
-            playerInTeleporter = true;
+            PlayerEnteringTeleporter();
         }
     }
 
@@ -69,9 +73,28 @@ public class Teleporter : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("Player has left the teleportation area");
-            currentTeleporterAnim.runtimeAnimatorController = teleporterIdle;
-            playerInTeleporter = false;
+            PlayerExitingTeleporter();
         }
+    }
+
+    void PlayerEnteringTeleporter()
+    {
+        Debug.Log("Player has entered a teleporter");
+        magentaAudioSource.PlayOneShot(teleporterActivatedAudio);
+        currentTeleporterAnim.runtimeAnimatorController = teleporterActivated;
+        playerInTeleporter = true;
+    }
+
+    void PlayerExitingTeleporter()
+    {
+        Debug.Log("Player has left the teleportation area");
+        currentTeleporterAnim.runtimeAnimatorController = teleporterIdle;
+        playerInTeleporter = false;
+    }
+
+    void PlayerUsingTeleporter()
+    {
+        magentaAudioSource.PlayOneShot(teleporterUsedAudio);
+        magentaLocation.position = destinationLocation.position;
     }
 }

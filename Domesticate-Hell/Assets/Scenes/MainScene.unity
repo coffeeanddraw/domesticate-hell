@@ -4904,6 +4904,16 @@ PrefabInstance:
       propertyPath: teleporterActivated
       value: 
       objectReference: {fileID: 9100000, guid: d8d2aa73982107c469a932ec26c52625, type: 2}
+    - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: teleporterActivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f5d034e8b9db824f95291cb869b6709, type: 3}
+    - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: teleporterUsedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1657714142, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
       propertyPath: warningUI
       value: 
@@ -6847,12 +6857,12 @@ PrefabInstance:
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.64
+      value: 16.625
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5525
+      value: -2.5625
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
@@ -8226,6 +8236,16 @@ PrefabInstance:
       propertyPath: teleporterIdle
       value: 
       objectReference: {fileID: 9100000, guid: de7232f5a3348394eb7585dfa1224c9c, type: 2}
+    - target: {fileID: 3075472474953899561, guid: 5be76fa6ea480634bb1deb156e16f38c,
+        type: 3}
+      propertyPath: teleporterActivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f5d034e8b9db824f95291cb869b6709, type: 3}
+    - target: {fileID: 3075472474953899561, guid: 5be76fa6ea480634bb1deb156e16f38c,
+        type: 3}
+      propertyPath: teleporterUsedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 3965671553460252812, guid: 5be76fa6ea480634bb1deb156e16f38c,
         type: 3}
       propertyPath: storeDeHell
@@ -8350,6 +8370,16 @@ PrefabInstance:
       propertyPath: teleporterActivated
       value: 
       objectReference: {fileID: 9100000, guid: dd3f9ab3f2104ae48ade36891cae3981, type: 2}
+    - target: {fileID: 6697423653815735345, guid: 5fed73c2067a2464383c6d3ce46ef42a,
+        type: 3}
+      propertyPath: teleporterActivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f5d034e8b9db824f95291cb869b6709, type: 3}
+    - target: {fileID: 6697423653815735345, guid: 5fed73c2067a2464383c6d3ce46ef42a,
+        type: 3}
+      propertyPath: teleporterUsedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1940331674, guid: 5fed73c2067a2464383c6d3ce46ef42a, type: 3}
       propertyPath: m_Camera
       value: 
@@ -8796,6 +8826,16 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 3692756894229509533, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: teleporterActivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f5d034e8b9db824f95291cb869b6709, type: 3}
+    - target: {fileID: 3692756894229509533, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: teleporterUsedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 427798802, guid: 74207d88238e1674d98bf253c38ddd9b, type: 3}
       propertyPath: m_Camera
       value: 
@@ -9036,6 +9076,16 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 6369597776323782073, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: teleporterActivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f5d034e8b9db824f95291cb869b6709, type: 3}
+    - target: {fileID: 6369597776323782073, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: teleporterUsedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1648623589, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
       propertyPath: warningUI
       value: 
@@ -9133,6 +9183,16 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 6089265211741695387, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: teleporterActivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f5d034e8b9db824f95291cb869b6709, type: 3}
+    - target: {fileID: 6089265211741695387, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: teleporterUsedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
     - target: {fileID: 1372802102, guid: bea02a32dd8ba4446b9eb93c80f2c004, type: 3}
       propertyPath: m_Camera
       value: 
