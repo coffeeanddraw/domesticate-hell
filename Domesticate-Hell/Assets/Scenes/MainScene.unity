@@ -4894,6 +4894,16 @@ PrefabInstance:
       propertyPath: magenta
       value: 
       objectReference: {fileID: 1353298416}
+    - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: teleporterIdle
+      value: 
+      objectReference: {fileID: 9100000, guid: a38cba6f980cf8540b4f9f90f1329674, type: 2}
+    - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: teleporterActivated
+      value: 
+      objectReference: {fileID: 9100000, guid: d8d2aa73982107c469a932ec26c52625, type: 2}
     - target: {fileID: 1657714142, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
       propertyPath: warningUI
       value: 
@@ -4902,6 +4912,23 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 936091458}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7394773797869847094, guid: b5fab56b4e3c5224dadf70779136f7d1,
+        type: 3}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
 --- !u!224 &1250711449 stripped
