@@ -1,4 +1,4 @@
-﻿// Cattatonicat 2019 
+﻿// Cattatonicat + Scott 2019 
 // For Domesticate Hell 
 // https://www.instagram.com/cattatonicat/
 
@@ -15,9 +15,6 @@ public class Teleporter : MonoBehaviour
     private GameObject magenta;
 
     [Header("Sound Effects")]
-
-    //[SerializeField]
-    //private AudioClip[] teleporterSoundEffects = new AudioClip[1]; // Used to store all of the SoundFX for the teleporter; Also must have at least one spot
 
     [SerializeField]
     private AudioClip teleporterActivatedAudio;
@@ -55,6 +52,9 @@ public class Teleporter : MonoBehaviour
         magentaAudioSource = magenta.GetComponent<AudioSource>();
 
         IsBeingTeleported = false;
+
+        // Set default teleporter animation to teleporter idle animation
+        currentTeleporterAnim.runtimeAnimatorController = teleporterIdle;
     }
 
     void Update()

@@ -4874,23 +4874,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -7394773797869847094, guid: b5fab56b4e3c5224dadf70779136f7d1,
+    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
         type: 3}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_Size.x
-      value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5625
-      objectReference: {fileID: 0}
-    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: dialogueBoxD4N
+      value: 
+      objectReference: {fileID: 1409006245}
+    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
+        type: 3}
+      propertyPath: D4NDialogueText
+      value: 
+      objectReference: {fileID: 920059715}
     - target: {fileID: 1950498879611636108, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
         type: 3}
       propertyPath: destinationTeleporter
@@ -4926,16 +4919,6 @@ PrefabInstance:
       propertyPath: teleporterDeactivatedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
-    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
-        type: 3}
-      propertyPath: dialogueBoxD4N
-      value: 
-      objectReference: {fileID: 1409006245}
-    - target: {fileID: 3271918863545289009, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
-        type: 3}
-      propertyPath: D4NDialogueText
-      value: 
-      objectReference: {fileID: 920059715}
     - target: {fileID: 1657714142, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
       propertyPath: warningUI
       value: 
@@ -4944,6 +4927,23 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 936091458}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7394773797869847094, guid: b5fab56b4e3c5224dadf70779136f7d1,
+        type: 3}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 97226494, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e07e7a6c956bcc4ab01caf3057a3ced, type: 3}
 --- !u!224 &1250711449 stripped
@@ -6862,12 +6862,12 @@ PrefabInstance:
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.625
+      value: 16.64
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5625
+      value: -2.5525
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495628, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
@@ -8390,6 +8390,11 @@ PrefabInstance:
       propertyPath: teleporterUsedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
+    - target: {fileID: 6697423653815735345, guid: 5fed73c2067a2464383c6d3ce46ef42a,
+        type: 3}
+      propertyPath: teleporterDeactivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
     - target: {fileID: 1940331674, guid: 5fed73c2067a2464383c6d3ce46ef42a, type: 3}
       propertyPath: m_Camera
       value: 
@@ -8846,10 +8851,46 @@ PrefabInstance:
       propertyPath: teleporterUsedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
+    - target: {fileID: 3692756894229509533, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: teleporterDeactivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
+    - target: {fileID: 3692756894229509533, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: teleporterIdle
+      value: 
+      objectReference: {fileID: 9100000, guid: fe6e505a66504cc45b0d692a2b394af0, type: 2}
+    - target: {fileID: 3692756894229509533, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: teleporterActivated
+      value: 
+      objectReference: {fileID: 9100000, guid: a985fbfbe549c094c9ef67cd28e4a6c2, type: 2}
     - target: {fileID: 427798802, guid: 74207d88238e1674d98bf253c38ddd9b, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1281859571}
+    - target: {fileID: 4174993250818367295, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4153721681469817545, guid: 8d62b7fbf416e7e43adfa1ebca31c939,
+        type: 3}
+    - target: {fileID: 4174993250818367295, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174993250818367295, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174993250818367295, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74207d88238e1674d98bf253c38ddd9b, type: 3}
 --- !u!1 &4174993250196073126 stripped
@@ -9106,6 +9147,11 @@ PrefabInstance:
       propertyPath: teleporterActivated
       value: 
       objectReference: {fileID: 9100000, guid: 606dab5fc0ff5384d8e1780a79c65a35, type: 2}
+    - target: {fileID: 6369597776323782073, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: teleporterDeactivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
     - target: {fileID: 1648623589, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
       propertyPath: warningUI
       value: 
@@ -9219,10 +9265,46 @@ PrefabInstance:
       propertyPath: teleporterUsedAudio
       value: 
       objectReference: {fileID: 8300000, guid: 94de7992e63696b4cbe1ac6ffc83fd60, type: 3}
+    - target: {fileID: 6089265211741695387, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: teleporterIdle
+      value: 
+      objectReference: {fileID: 9100000, guid: 6fc900cd08fa8634d9f4b2e6c119974f, type: 2}
+    - target: {fileID: 6089265211741695387, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: teleporterActivated
+      value: 
+      objectReference: {fileID: 9100000, guid: d5560b4115243d7489b64bdad402c5ed, type: 2}
+    - target: {fileID: 6089265211741695387, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: teleporterDeactivatedAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc8be519512b4849b85eb7e8830f719, type: 3}
     - target: {fileID: 1372802102, guid: bea02a32dd8ba4446b9eb93c80f2c004, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1281859571}
+    - target: {fileID: 9072170121305781798, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8584512750810709581, guid: 75bd6bceab5f4b44da2873b105cb7101,
+        type: 3}
+    - target: {fileID: 9072170121305781798, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072170121305781798, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072170121305781798, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bea02a32dd8ba4446b9eb93c80f2c004, type: 3}
 --- !u!1 &9072170121734408589 stripped
