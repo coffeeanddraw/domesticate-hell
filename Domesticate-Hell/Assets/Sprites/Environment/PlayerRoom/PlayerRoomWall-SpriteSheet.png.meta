@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: 478525e8bdec90d41bb61d4bd96fe770
+guid: 773645a69b4c90e4ea349329011567c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3673197468402170534
-    second: Door-SpriteSheet_0
+      213: -5610621117859528259
+    second: PlayerRoomWall-SpriteSheet_0
   - first:
-      213: -3260844663216510286
-    second: Door-SpriteSheet_1
+      213: 4551749382147300026
+    second: PlayerRoomWall-SpriteSheet_1
   - first:
-      213: 336197079144610021
-    second: Door-SpriteSheet_2
+      213: 8524010403130203629
+    second: PlayerRoomWall-SpriteSheet_2
   - first:
-      213: 3553627181520539546
-    second: Door-SpriteSheet_3
+      213: 409702634267002558
+    second: PlayerRoomWall-SpriteSheet_3
   - first:
-      213: -6746958852870571589
-    second: Door-SpriteSheet_4
+      213: 3799835152274644472
+    second: PlayerRoomWall-SpriteSheet_4
   - first:
-      213: -3314646440842304819
-    second: Door-SpriteSheet_5
+      213: 1297990138125525624
+    second: PlayerRoomWall-SpriteSheet_5
   - first:
-      213: -8413120961940862841
-    second: Door-SpriteSheet_6
+      213: -7276041725361691486
+    second: PlayerRoomWall-SpriteSheet_6
+  - first:
+      213: -7794401595254974208
+    second: PlayerRoomWall-SpriteSheet_7
+  - first:
+      213: -853724419205249572
+    second: PlayerRoomWall-SpriteSheet_8
+  - first:
+      213: -2514652022639472758
+    second: PlayerRoomWall-SpriteSheet_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -81,7 +90,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -92,7 +101,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -103,7 +112,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -116,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door-SpriteSheet_0
+      name: PlayerRoomWall-SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e58612a46e26ba45a126f9d965bb1df
-      internalID: 3673197468402170534
+      spriteID: 70d3981bebfcdb34e86887796d3bed5e
+      internalID: -5610621117859528259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door-SpriteSheet_1
+      name: PlayerRoomWall-SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 17
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4130d5416e1a89f4eb6bd597b5a1de72
-      internalID: -3260844663216510286
+      spriteID: dcd39200718900d4ba6845e7ec0bdff7
+      internalID: 4551749382147300026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door-SpriteSheet_2
+      name: PlayerRoomWall-SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 48
+        x: 34
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3697fd51e4ea2f74eb56bbef05a3bbc4
-      internalID: 336197079144610021
+      spriteID: 62868b44c49cd3b42be4535d32e78af1
+      internalID: 8524010403130203629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door-SpriteSheet_3
+      name: PlayerRoomWall-SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 72
+        x: 51
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4edb2a117e0cc6e4ca88e6fe04e14478
-      internalID: 3553627181520539546
+      spriteID: 6cd4740cfc47adb44bde0b44b0e8c1e5
+      internalID: 409702634267002558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door-SpriteSheet_4
+      name: PlayerRoomWall-SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 68
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 783ebb410727a6d4cad682e2f9aa56ee
-      internalID: -6746958852870571589
+      spriteID: 6fbcb6e0ab170f54884bf3b1e9c52282
+      internalID: 3799835152274644472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door-SpriteSheet_5
+      name: PlayerRoomWall-SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 120
+        x: 85
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb8bc3026120ac44e81487f9114d39e0
-      internalID: -3314646440842304819
+      spriteID: edff5dca77daa7442b6ac72360730f0a
+      internalID: 1297990138125525624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door-SpriteSheet_6
+      name: PlayerRoomWall-SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 144
+        x: 102
         y: 0
-        width: 24
-        height: 76
+        width: 17
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,8 +265,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea861773c7eaf2b44a13c2fc36648348
-      internalID: -8413120961940862841
+      spriteID: 2c4621d30a416db4fa623e30d33e529b
+      internalID: -7276041725361691486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRoomWall-SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 17
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e1bca48fbd9ae4c829878ced2d60bb
+      internalID: -7794401595254974208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRoomWall-SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 17
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3730c2926b8e44796ab718a4e19dec
+      internalID: -853724419205249572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRoomWall-SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 17
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e5e817c2d7d21408413c800f2c6d43
+      internalID: -2514652022639472758
       vertices: []
       indices: 
       edges: []
@@ -265,7 +337,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 11fcbef023c05374da67578cc50b4545
+    spriteID: dde76f02c24ab0a40b13142371338166
     internalID: 0
     vertices: []
     indices: 
