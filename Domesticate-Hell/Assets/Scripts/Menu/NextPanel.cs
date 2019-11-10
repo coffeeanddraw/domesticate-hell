@@ -12,7 +12,7 @@ public class NextPanel : MonoBehaviour
 
     void NextIntro()
     {
-        currentPanel.SetActive(false);
+        //currentPanel.SetActive(false);
         nextPanel.SetActive(true);
     }
 }

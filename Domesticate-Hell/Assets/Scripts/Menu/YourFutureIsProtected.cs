@@ -9,17 +9,17 @@ using UnityEngine;
 public class YourFutureIsProtected : MonoBehaviour
 {
     [SerializeField]
-    private AudioSource yourFutureIsProtectedAudioSource;
+    private AudioSource yourFutureIsProtectedAudioSource = null;
 
     [SerializeField]
-    private AudioClip yourFutureIsProtectedAudioClip;
+    private AudioClip yourFutureIsProtectedAudioClip = null;
 
     [SerializeField]
-    private GameObject mainMenuCanvas;
+    private GameObject titlePagePanel = null;
 
     void Awake()
     {
-        mainMenuCanvas.SetActive(false);
+        titlePagePanel.SetActive(false);
         Invoke("PlayYFIPAudio", 1);
         Invoke("TurnOnMainMenu", 8);
     }
@@ -28,10 +28,5 @@ public class YourFutureIsProtected : MonoBehaviour
     {
         Debug.Log("Playing 'Your Future Is Protected' Audio");
         yourFutureIsProtectedAudioSource.PlayOneShot(yourFutureIsProtectedAudioClip);
-    }
-
-    void TurnOnMainMenu()
-    {
-        mainMenuCanvas.SetActive(true);
     }
 }

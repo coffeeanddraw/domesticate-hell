@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class TitleCanvas : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject yourFutureIsProtectedCanvas;
 
     [SerializeField]
     private GameObject credits;
@@ -14,7 +12,6 @@ public class TitleCanvas : MonoBehaviour
 
     void Awake()
     {
-        yourFutureIsProtectedCanvas.SetActive(true);
         credits.SetActive(false);
     }
     
