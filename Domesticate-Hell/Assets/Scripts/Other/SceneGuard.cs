@@ -1,9 +1,6 @@
 ﻿// Cattatonicat 2019 
 // For Domesticate Hell 
 // https://www.instagram.com/cattatonicat/
-// Cattatonicat 2019 
-// For Domesticate Hell 
-// https://www.instagram.com/cattatonicat/
 
 using UnityEngine;
 using UnityEngine.SceneManagement;

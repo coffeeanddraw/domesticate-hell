@@ -337,6 +337,7 @@ MonoBehaviour:
   eyeballPanel: {fileID: 1538160227}
   year666Panel: {fileID: 1219713125}
   deadAt13Panel: {fileID: 769245467}
+  skipPanel: {fileID: 408061353}
 --- !u!114 &22817604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +687,7 @@ GameObject:
   - component: {fileID: 408061354}
   - component: {fileID: 408061356}
   - component: {fileID: 408061355}
+  - component: {fileID: 408061357}
   m_Layer: 5
   m_Name: SkipPanel
   m_TagString: Untagged
@@ -750,6 +752,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408061353}
   m_CullTransparentMesh: 0
+--- !u!114 &408061357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408061353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db67908f6029ab04abdf2336e9457fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToSkipTo: MainScene
 --- !u!1 &503515882
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -4.9, y: 4.9}
+  m_AnchoredPosition: {x: -4.9000244, y: 4.899994}
   m_SizeDelta: {x: 82, y: 8}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &535414910
@@ -1427,7 +1442,6 @@ GameObject:
   - component: {fileID: 1538160229}
   - component: {fileID: 1538160232}
   - component: {fileID: 1538160231}
-  - component: {fileID: 1538160234}
   - component: {fileID: 1538160233}
   m_Layer: 5
   m_Name: EyeballPanel
@@ -1622,22 +1636,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1538160234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538160227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b64a87c1b66c78f459f85713f3ba1d07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yourFutureIsProtectedAudioSource: {fileID: 1538160233}
-  yourFutureIsProtectedAudioClip: {fileID: 8300000, guid: 24266381a1fb32341bacf3517dd3d74c,
-    type: 3}
-  titlePagePanel: {fileID: 1085053992}
 --- !u!1 &1612976034
 GameObject:
   m_ObjectHideFlags: 0
