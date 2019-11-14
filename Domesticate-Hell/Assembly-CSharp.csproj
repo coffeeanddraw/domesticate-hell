@@ -88,11 +88,11 @@
     <Compile Include="Assets\Scripts\Player Scripts\Player_Climb.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Interaction.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player_Moviment.cs" />
+    <Compile Include="Assets\Scripts\SkipPanel.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\CattatonicatManager.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\StoreDeHellContent.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\StoreItemHuman.cs" />
     <Compile Include="Assets\Scripts\StoreDeHell\StoreItemTicket.cs" />
-    <Compile Include="Assets\SkipPanel.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

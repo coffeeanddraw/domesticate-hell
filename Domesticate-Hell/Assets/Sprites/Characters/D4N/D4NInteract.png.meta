@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 73dd111a3cfa7324a8ddabb31ce201bc
+guid: 89ab01305568a2c4aac0e23bfae53078
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6175472095592598746
-    second: D4NBlink_0
+      213: 347763630318759243
+    second: D4NInteract_0
   - first:
-      213: 3686128869123658405
-    second: D4NBlink_1
+      213: 5503061536236188259
+    second: D4NInteract_1
   - first:
-      213: -777287753992890806
-    second: D4NBlink_2
+      213: 4484331013988925129
+    second: D4NInteract_2
   - first:
-      213: 1668969724978538373
-    second: D4NBlink_3
+      213: -729808317875307473
+    second: D4NInteract_3
   - first:
-      213: -1348317729168245537
-    second: D4NBlink_4
+      213: 6138508512027026771
+    second: D4NInteract_4
   - first:
-      213: 4951145418749042504
-    second: D4NBlink_5
+      213: -8552406772538500670
+    second: D4NInteract_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D4NBlink_0
+      name: D4NInteract_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,14 +116,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 766fdaf70c87e4943bec5f0309fd8c18
-      internalID: -6175472095592598746
+      spriteID: 0247a179cfa181e4ab00e7f81043679c
+      internalID: 347763630318759243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D4NBlink_1
+      name: D4NInteract_1
       rect:
         serializedVersion: 2
         x: 40
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6526eaca7a007a34c88a5e50a1d0b596
-      internalID: 3686128869123658405
+      spriteID: 85102a5cc9fbded4195372185418e4ec
+      internalID: 5503061536236188259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D4NBlink_2
+      name: D4NInteract_2
       rect:
         serializedVersion: 2
         x: 80
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e4e2ceff87483e429bd1e42fcb65ced
-      internalID: -777287753992890806
+      spriteID: 1ec915ab4aa518842a0fbf9937285796
+      internalID: 4484331013988925129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D4NBlink_3
+      name: D4NInteract_3
       rect:
         serializedVersion: 2
         x: 120
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85416033f11bebf4c8af34c17ee221d1
-      internalID: 1668969724978538373
+      spriteID: 01650c3bc498bbd48aa9d872c590a754
+      internalID: -729808317875307473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D4NBlink_4
+      name: D4NInteract_4
       rect:
         serializedVersion: 2
         x: 160
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9676e53c1b8af94439f124e642cc851d
-      internalID: -1348317729168245537
+      spriteID: 6a51804271cafe643add06a2445ef4f8
+      internalID: 6138508512027026771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D4NBlink_5
+      name: D4NInteract_5
       rect:
         serializedVersion: 2
         x: 200
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ca6ab21065d3284aa4af012a6409825
-      internalID: 4951145418749042504
+      spriteID: 817c3f9fc17f9a04d9f29f085bd9042e
+      internalID: -8552406772538500670
       vertices: []
       indices: 
       edges: []
@@ -230,7 +230,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5adcb86217466824d881614df7e42567
+    spriteID: 306ff41217c8129419b5ef63da92c05d
     internalID: 0
     vertices: []
     indices: 

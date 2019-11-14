@@ -9,8 +9,7 @@ using UnityEngine.UI;
 
 public class D4NManager : MonoBehaviour
 {
-
-    // TODO: Complete D4N Dialogue Box // 
+    [Header("D4N dialogue UI")]
 
     [SerializeField]
     private GameObject dialogueBoxD4N;
@@ -18,35 +17,22 @@ public class D4NManager : MonoBehaviour
     [SerializeField]
     private Text D4NDialogueText;
 
-    [SerializeField]
-    private RuntimeAnimatorController defaultD4N;
+    [Header("D4N Soune Effect")]
 
     [SerializeField]
-    private RuntimeAnimatorController notificationD4N;
+    private AudioClip voiceD4N;
 
-    private Animator currentD4N;
+    private AudioSource audioSourceD4N;
+    private Animator animatorD4N;
     private bool completeD4NTutorial = false;
-    private bool notification = false;
-    private bool D4NDialogueOn = false;
-
-    // static variable for Player_Interaction.cs to access
-    private static bool playerInteracting = false;
-
-    public static bool PlayerInteracting
-    {
-        get { return playerInteracting; }
-        set { playerInteracting = value; }
-    }
-
-    public bool Notification
-    {
-        get { return notification; }
-        set { notification = value; }
-    }
+    private bool dialogueOnD4N = false;
+    private bool playerInteracting = false;
+    private bool playerInRange = false;
 
     void Awake()
     {
-        currentD4N = GetComponent<Animator>();
+        animatorD4N = GetComponent<Animator>();
+        audioSourceD4N = GetComponent<AudioSource>();
 
         dialogueBoxD4N.SetActive(false);
     }
@@ -58,58 +44,50 @@ public class D4NManager : MonoBehaviour
 
     void CheckInteraction()
     {
-        // Check if the player is clicking the Interact button AND if the player is interacting with D4N
-        if (Input.GetButtonDown("Interact") && playerInteracting && !D4NDialogueOn)
+        if (Input.GetButtonDown("Interact") && playerInRange && !playerInteracting)
         {
-            if (completeD4NTutorial == false)
+            playerInteracting = true;
+            animatorD4N.SetBool("PlayerInteracting", true); 
+
+            if (!dialogueOnD4N)
             {
-                D4NTutorial();
-                completeD4NTutorial = true;
-            }
-            else if (completeD4NTutorial == true)
-            {
-                D4NDefault();
+                if (!completeD4NTutorial)
+                {
+                    D4NDialogueText.text = "D4N: Hello, Magenta! I have 666 souls for you.";
+                    GameManager.SoulCount += 666;
+                    dialogueBoxD4N.SetActive(true);
+                    audioSourceD4N.PlayOneShot(voiceD4N);
+                    dialogueOnD4N = true;
+                    completeD4NTutorial = true;
+                }
+                else if (completeD4NTutorial)
+                {
+                    animatorD4N.SetBool("D4NHeartReaction", true);
+                    //D4NDialogueText.text = "D4N: Hello, Magenta!";
+                    //dialogueBoxD4N.SetActive(true);
+                    //dialogueOnD4N = true;
+                }
             }
         }
-        else if (Input.GetButtonDown("Interact") && playerInteracting && D4NDialogueOn)
+        else if (Input.GetButtonDown("Interact") && playerInRange && playerInteracting)
         {
-            dialogueBoxD4N.SetActive(false);
+            animatorD4N.SetBool("PlayerInteracting", false);
+            playerInteracting = false;
+            if (dialogueOnD4N)
+            {
+                dialogueBoxD4N.SetActive(false);
+                dialogueOnD4N = false;
+            }
         }
-    }
-
-    // D4N DIALOGUE SETTINGS // 
-
-    void D4NTutorial()
-    {
-        D4NDialogueText.text = "D4N: Hello, Magenta! I have 666 souls for you.";
-        GameManager.SoulCount += 666;
-        dialogueBoxD4N.SetActive(true);
-        D4NDialogueOn = true;
-    }
-
-    void D4NDefault()
-    {
-        D4NDialogueText.text = "D4N: Hello, Magenta!";
-        D4NDialogueOn = true;
     }
 
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            playerInRange = true;
+            animatorD4N.SetBool("PlayerNearby", true);
             Debug.Log("Player is with D4N");
-            Debug.Log(completeD4NTutorial);
-            if (completeD4NTutorial == false)
-            {
-                // initiate D4N dialogue 
-                notification = true;
-                currentD4N.runtimeAnimatorController = notificationD4N;
-                Debug.Log("D4N has a notification for the player");
-                if (playerInteracting == true)
-                {
-                    Debug.Log("Player is interacting with D4N");
-                }
-            }
         }
     }
 
@@ -117,7 +95,10 @@ public class D4NManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            currentD4N.runtimeAnimatorController = defaultD4N;
+            playerInRange = false;
+            animatorD4N.SetBool("PlayerNearby", false);
+            animatorD4N.SetBool("PlayerInteracting", false);
+            animatorD4N.SetBool("D4NHeartReaction", false);
             Debug.Log("Player is saying bye to D4N");
         }
     }
