@@ -13,10 +13,7 @@ GameObject:
   - component: {fileID: 3569193539707621163}
   - component: {fileID: 3569193539707621164}
   - component: {fileID: 3569193539707621166}
-  - component: {fileID: 3569193539707621165}
-  - component: {fileID: 3569193539707621167}
-  - component: {fileID: 3569193539707621152}
-  - component: {fileID: 3569193539707621154}
+  - component: {fileID: 6307366674497426237}
   - component: {fileID: 3569193539707621153}
   m_Layer: 0
   m_Name: Player
@@ -76,7 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: -415009885
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1c5ec88d1d3baec45a14efca3a306c33, type: 3}
+  m_Sprite: {fileID: 5582758788353946818, guid: 0fec8d0235211684093411ca5ceebd75,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,7 +84,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &3569193539707621163
 Rigidbody2D:
   serializedVersion: 4
@@ -99,10 +97,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 30
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -121,18 +119,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003467083, y: 0.15453482}
+  m_Offset: {x: 0.003467083, y: 0.07675147}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9375, y: 1.3125}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.9375, y: 1.4375}
     newSize: {x: 0.15, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.67828083, y: 0.9936323}
+  m_Size: {x: 0.67828083, y: 0.2228179}
   m_EdgeRadius: 0
 --- !u!58 &3569193539707621166
 CircleCollider2D:
@@ -144,13 +142,13 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0054249763, y: -0.42948475}
+  m_Offset: {x: -0.0019292831, y: 0.074715614}
   serializedVersion: 2
-  m_Radius: 0.270161
---- !u!114 &3569193539707621165
+  m_Radius: 0.23089218
+--- !u!114 &6307366674497426237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,64 +157,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3569193539707621160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 573a047735d6e404796d8c0c76a1a02e, type: 3}
+  m_Script: {fileID: 11500000, guid: 49650bda2b9b1714eb140bb9c76677dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 5
-  onLadder: 0
---- !u!114 &3569193539707621167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3569193539707621160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 863d3615b6701e446a611379137fe978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryUI: {fileID: 0}
-  currentInteractionObject: {fileID: 0}
-  nameEnviroment: {fileID: 0}
-  gameObjectInventory: {fileID: 0}
-  onStair: {fileID: 0}
-  currentInteractionScript: {fileID: 0}
-  playerInteractionStair: {fileID: 3569193539707621154}
-  inventory: {fileID: 3569193539707621152}
-  WithD4N: 0
---- !u!114 &3569193539707621152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3569193539707621160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ac350f4e910f654ca3bd6dfb13fbd05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  space: 16
-  items: []
-  inventoryUI: {fileID: 0}
---- !u!114 &3569193539707621154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3569193539707621160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e749dc15285ad6f4594676aa8e6f0949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Enviroment: {fileID: 2542026349469065671, guid: 6e07e7a6c956bcc4ab01caf3057a3ced,
-    type: 3}
-  playerRigidbody: {fileID: 3569193539707621163}
-  player: {fileID: 3569193539707621160}
-  isClimbing: 0
+  playerSpeed: 5
 --- !u!95 &3569193539707621153
 Animator:
   serializedVersion: 3
