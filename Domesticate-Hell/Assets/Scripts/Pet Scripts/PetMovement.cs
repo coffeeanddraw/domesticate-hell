@@ -9,7 +9,7 @@ public class PetMovement : MonoBehaviour
 {
 
     [SerializeField]
-    private float speed;
+    private float speed = 3.0f;
 
     [SerializeField]
     private float changeTime = 3.0f;
@@ -18,6 +18,15 @@ public class PetMovement : MonoBehaviour
 
     private float timer;
     private int direction = 1;
+
+    private bool colliding = false;
+
+    private Rigidbody2D petRB2D;
+
+    void Awake()
+    {
+        petRB2D = GetComponent<Rigidbody2D>();
+    }
 
     void Start()
     {
@@ -32,8 +41,10 @@ public class PetMovement : MonoBehaviour
     }
 
     // * Run Finite State Machine *// 
-    private void Idle()
+    void Idle()
     {
+        Vector2 position = petRB2D.position;
+
         timer -= Time.deltaTime;
 
         if (timer < 0)
@@ -51,6 +62,16 @@ public class PetMovement : MonoBehaviour
         //position.x = position.x + Time.deltaTime * speed * direction;
 
         //rgbd2D.MovePosition(position);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        colliding = true;
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        colliding = false;
     }
 
 }
