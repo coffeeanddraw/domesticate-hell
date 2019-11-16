@@ -41,19 +41,19 @@ public class Pet : MonoBehaviour
     [SerializeField]
     private Animator petAnimator = null;
 
-    private AudioSource audioSource;
+    private AudioSource audioSource = null;
 
     private int petMaxManna = 88;
 
     private int petManna = 88;
-    private int petChangeInManna;
+    private int petChangeInManna = 0;
 
-    private TextMeshProUGUI petStatsTMP;
+    private TextMeshProUGUI petStatsTMP = null;
 
     private int hungerCounter = 0;
     private int soulCounter = 0;
 
-    private bool playerInRange;
+    private bool playerInRange = false;
 
     void Awake()
     {
@@ -68,15 +68,16 @@ public class Pet : MonoBehaviour
 
     void FixedUpdate()
     {
-        UpdateHunger();
-        UpdateSoul();
+        if (petManna != 0)
+        {
+            UpdateHunger();
+            UpdateSoul();
+        } 
     }
 
     void Update()
     {
-        UpdateHunger();
-        UpdateSoul();
-        CheckPetDeath();
+        //CheckPetDeath();
         CheckInteraction();
     }
 
@@ -84,32 +85,33 @@ public class Pet : MonoBehaviour
     {
         hungerCounter += 1;
 
-        if (hungerCounter == 60)
+        if (hungerCounter == 22)
         {
             petManna -= 1;
-            hungerCounter = 0;
+            hungerCounter = 0; 
         }
-
         petStatsTMP.SetText("{0}/{1}", petManna, petMaxManna);
     }
 
     void UpdateSoul()
     {
         soulCounter += 1; 
-        if (soulCounter == 13)
+        if (soulCounter == 2)
         {
             GameManager.SoulCount += 2;
             soulCounter = 0;
+            
         }
     }
 
-    void CheckPetDeath()
-    {
-        if(this.petManna == 0)
-        {
-            pet.SetActive(false);
-        }
-    }
+    // Pet death state has been taken out for Logan Theatre Playtesting Party
+    //void CheckPetDeath()
+    //{
+    //    if(this.petManna == 0)
+    //    {
+    //        pet.SetActive(false);
+    //    }
+    //}
 
     void CheckInteraction()
     {
@@ -119,9 +121,12 @@ public class Pet : MonoBehaviour
             {
                 if(GameManager.HumanCount >= 5)
                 {
-                    GameManager.HumanCount -= 5;
-                    petManna += 5;
-                    PickEating();
+                    if(petManna != 88)
+                    {
+                        GameManager.HumanCount -= 5;
+                        petManna += 5;
+                        PickEating();
+                    }
                 }
             }
         }

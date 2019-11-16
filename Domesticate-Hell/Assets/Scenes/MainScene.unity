@@ -7825,7 +7825,7 @@ PrefabInstance:
     - target: {fileID: 3940322601031495629, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
       propertyPath: m_Volume
-      value: 0.33
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3940322601031495629, guid: d6a37734e296c2b46888b3b8726a35ac,
         type: 3}
@@ -9060,7 +9060,8 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 936091458}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 706685651725502566, guid: 5fed73c2067a2464383c6d3ce46ef42a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5fed73c2067a2464383c6d3ce46ef42a, type: 3}
 --- !u!1 &706685651725502559 stripped
 GameObject:
@@ -9524,6 +9525,21 @@ PrefabInstance:
       propertyPath: m_SpriteSortPoint
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2736421080008911235, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736421080008911235, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.80976176
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736421080008911235, guid: 74207d88238e1674d98bf253c38ddd9b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.7265096
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74207d88238e1674d98bf253c38ddd9b, type: 3}
 --- !u!1001 &7351686046748986760
@@ -9700,6 +9716,47 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6221542084580246848, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221542084580246848, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.76497173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221542084580246848, guid: 2ffa4c006fd75d247a1013f5f859c171,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.61460495
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791993693, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
+      propertyPath: m_text
+      value: 'TMP
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791993693, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791993693, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791993693, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791993693, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791993693, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ffa4c006fd75d247a1013f5f859c171, type: 3}
 --- !u!1001 &9072170121734408588
@@ -9874,6 +9931,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727380777090661496, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727380777090661496, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.27693748
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727380777090661496, guid: bea02a32dd8ba4446b9eb93c80f2c004,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.64631176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bea02a32dd8ba4446b9eb93c80f2c004, type: 3}
