@@ -43,9 +43,9 @@ public class Pet : MonoBehaviour
 
     private AudioSource audioSource;
 
-    private int petMaxManna = 999;
+    private int petMaxManna = 88;
 
-    private int petManna = 999;
+    private int petManna = 88;
     private int petChangeInManna;
 
     private TextMeshProUGUI petStatsTMP;
@@ -84,7 +84,7 @@ public class Pet : MonoBehaviour
     {
         hungerCounter += 1;
 
-        if (hungerCounter == 40)
+        if (hungerCounter == 60)
         {
             petManna -= 1;
             hungerCounter = 0;
