@@ -11,37 +11,32 @@ public class CattatonicatManager : MonoBehaviour
 {
     // Store de Hell Canvas // 
     [SerializeField]
-    private GameObject storeDeHell;
+    private GameObject storeDeHell = null;
 
     // Dialogue Box // 
     [SerializeField]
-    private GameObject dialogueBoxCattatonicat;
+    private GameObject dialogueBoxCattatonicat = null;
 
     // Dialogue Box Text // 
     [SerializeField]
-    private Text cattatonicatDialogueText;
+    private Text cattatonicatDialogueText = null;
 
     [Header("Store dé Hell Open & Close Sound Effects")]
 
     [SerializeField]
-    private AudioClip storeOpenSound;
+    private AudioClip storeOpenSound = null;
 
     [SerializeField]
-    private AudioClip storeCloseSound;
+    private AudioClip storeCloseSound = null;
 
-    private AudioSource storeAudioSource;
+    private AudioSource storeAudioSource = null;
     
     private bool completeCattatonicatTutorial = false;
     private bool playerInRange = false;
+    private bool pendingDialogue = true;
+    private bool dialogueOnDisplay = false;
+
     private static bool storeOnDisplay = false;
-
-    private static bool pendingDialogue = true; 
-
-    public static bool PendingDialogue
-    {
-        get { return pendingDialogue; }
-        set { pendingDialogue = value; }
-    }
 
     public static bool StoreOnDisplay
     {
@@ -66,24 +61,32 @@ public class CattatonicatManager : MonoBehaviour
         {
             if(playerInRange)
             {
-                if(pendingDialogue == true)
+                if (storeOnDisplay)
                 {
-                    CattatonicatDialogue();
-                    Debug.Log("Calling 'CattatonicatDialogue()'");
-                    Invoke("TurnOffDialogue", 5);
-                    pendingDialogue = false; 
+                    TurnOffStore();
+                    PlayerController.PlayerAllowedToMove = true; 
                 }
-                else if (pendingDialogue == false)
+                else if (!storeOnDisplay)
                 {
-                    TurnOffDialogue();
-
-                    if (storeOnDisplay == false)
+                    if (dialogueOnDisplay)
                     {
-                        TurnOnStore();
+                        TurnOffDialogue();
+                        PlayerController.PlayerAllowedToMove = true;
+                        dialogueOnDisplay = false;
                     }
-                    else if (storeOnDisplay == true)
+                    else if (!dialogueOnDisplay)
                     {
-                        TurnOffStore();
+                        if (pendingDialogue)
+                        {
+                            PlayerController.PlayerAllowedToMove = false;
+                            CattatonicatDialogue();
+                            dialogueOnDisplay = true;
+                        }
+                        else if (!pendingDialogue)
+                        {
+                            TurnOnStore();
+                            PlayerController.PlayerAllowedToMove = false;
+                        }
                     }
                 }
             }
