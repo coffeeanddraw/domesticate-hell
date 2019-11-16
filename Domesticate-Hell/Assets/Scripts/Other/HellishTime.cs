@@ -39,7 +39,7 @@ public class HellishTime : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         CalculateTime();
 
@@ -54,7 +54,7 @@ public class HellishTime : MonoBehaviour
             calculateSeconds += 1;
 
             // Change this statement to change how fast the time goes in game
-            if (calculateSeconds == 1)
+            if (calculateSeconds == 2)
             {
                 seconds += 1;
                 calculateSeconds = 0;
