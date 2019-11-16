@@ -47,7 +47,8 @@ public class D4NManager : MonoBehaviour
         if (Input.GetButtonDown("Interact") && playerInRange && !playerInteracting)
         {
             playerInteracting = true;
-            animatorD4N.SetBool("PlayerInteracting", true); 
+            animatorD4N.SetBool("PlayerInteracting", true);
+            PlayerController.PlayerAllowedToMove = false;
 
             if (!dialogueOnD4N)
             {
@@ -59,6 +60,7 @@ public class D4NManager : MonoBehaviour
                     audioSourceD4N.PlayOneShot(voiceD4N);
                     dialogueOnD4N = true;
                     completeD4NTutorial = true;
+                    
                 }
                 else if (completeD4NTutorial)
                 {
@@ -73,6 +75,7 @@ public class D4NManager : MonoBehaviour
         {
             animatorD4N.SetBool("PlayerInteracting", false);
             playerInteracting = false;
+            PlayerController.PlayerAllowedToMove = true;
             if (dialogueOnD4N)
             {
                 dialogueBoxD4N.SetActive(false);
