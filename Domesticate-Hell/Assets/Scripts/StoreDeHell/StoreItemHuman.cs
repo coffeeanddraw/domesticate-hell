@@ -12,9 +12,6 @@ public class StoreItemHuman : MonoBehaviour
     private GameObject storeItem;
 
     [SerializeField]
-    private GameObject purchaseButton;
-
-    [SerializeField]
     private GameObject insufficientFundsUI;
 
     [SerializeField]
@@ -35,7 +32,6 @@ public class StoreItemHuman : MonoBehaviour
     {
         insufficientFundsVoice = insufficientFundsUI.GetComponent<AudioSource>();
         purchaseSound = GetComponent<AudioSource>();
-        this.purchaseButton.SetActive(true);
         insufficientFundsUI.SetActive(false);
     }
 
@@ -45,9 +41,12 @@ public class StoreItemHuman : MonoBehaviour
 
         if (GameManager.SoulCount >= price)
         {
-            purchaseSound.PlayOneShot(purchaseSoundEffect);
-            GameManager.HumanCount += humanCount;
-            GameManager.SoulCount -= price;
+            if (GameManager.HasFireKey || GameManager.HasShadowKey || GameManager.HasElectricityKey || GameManager.HasAlchemyKey)
+            {
+                purchaseSound.PlayOneShot(purchaseSoundEffect);
+                GameManager.HumanCount += humanCount;
+                GameManager.SoulCount -= price;
+            }
         }
         else if (GameManager.SoulCount < price)
         {
