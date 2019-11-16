@@ -1,6 +1,7 @@
-﻿// Cattatonicat 2019 
+﻿// Cat// Cattatonicat 2019 
 // For Domesticate Hell 
 // https://www.instagram.com/cattatonicat/
+// https://cattatonicat.tumblr.com/
 
 using System.Collections;
 using System.Collections.Generic;

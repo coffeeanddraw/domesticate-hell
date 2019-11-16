@@ -10,69 +10,69 @@ using UnityEngine.UI;
 public class StoreItemTicket : MonoBehaviour
 {
     [SerializeField]
-    private GameObject storeItem;
+    private GameObject storeItem = null;
 
     [SerializeField]
-    private GameObject unlockedMask;
+    private GameObject unlockedMask = null;
 
     [SerializeField]
-    private GameObject purchaseButton;
+    private GameObject purchaseButton = null;
 
     [SerializeField]
-    private GameObject insufficientFundsUI;
+    private GameObject insufficientFundsUI = null;
 
     [SerializeField]
-    private GameObject thankYouForYourPurchaseUI;
+    private GameObject thankYouForYourPurchaseUI = null;
 
     [SerializeField]
-    private GameObject pet;
+    private GameObject pet = null;
 
     [SerializeField]
-    private bool fireTicket;
+    private bool fireTicket = false;
 
     [SerializeField]
-    private bool shadowTicket;
+    private bool shadowTicket = false;
 
     [SerializeField]
-    private bool electricityTicket;
+    private bool electricityTicket = false;
 
     [SerializeField]
-    private bool alchemyTicket;
+    private bool alchemyTicket = false;
 
     [SerializeField]
-    private int price;
+    private int price = 0;
 
     [SerializeField]
     private AudioClip[] thankYouSound = new AudioClip[2];
 
     [Header("Key Image Game Objects ")]
     [SerializeField]
-    private Image fireKey;
+    private Image fireKey = null;
     [SerializeField]
-    private Image shadowKey;
+    private Image shadowKey = null;
     [SerializeField]
-    private Image electricityKey;
+    private Image electricityKey = null;
     [SerializeField]
-    private Image alchemyKey;
+    private Image alchemyKey = null;
 
     [Header("Activated Key Sprites ")]
     [SerializeField]
-    private Sprite fireKeyActivated;
+    private Sprite fireKeyActivated = null;
     [SerializeField]
-    private Sprite shadowKeyActivated;
+    private Sprite shadowKeyActivated = null;
     [SerializeField]
-    private Sprite electricKeyActivated;
+    private Sprite electricKeyActivated = null;
     [SerializeField]
-    private Sprite alchemyKeyActivated;
+    private Sprite alchemyKeyActivated = null;
 
 
     private bool unlocked = false;
 
-    private AudioSource insufficientFundsVoice;
+    private AudioSource insufficientFundsVoice = null;
 
-    private AudioSource purchaseSoundEffect;
+    private AudioSource purchaseSoundEffect = null;
 
-    private AudioSource thankYouForYourPurchaseVoice;
+    private AudioSource thankYouForYourPurchaseVoice = null;
 
     void Awake()
     {

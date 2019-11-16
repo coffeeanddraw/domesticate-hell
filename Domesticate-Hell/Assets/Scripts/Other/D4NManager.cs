@@ -54,7 +54,7 @@ public class D4NManager : MonoBehaviour
             {
                 if (!completeD4NTutorial)
                 {
-                    D4NDialogueText.text = "D4N: Hello, Magenta! I have 666 souls for you.";
+                    D4NDialogueText.text = "D4N: Hello, Magenta! So good to have you here. I am D4N. AfterLife Wellness has installed me in your room to monitor you. I have allocated 666 souls in your account to help your transition into Hell. You will need these at the shop upstairs.";
                     GameManager.SoulCount += 666;
                     dialogueBoxD4N.SetActive(true);
                     audioSourceD4N.PlayOneShot(voiceD4N);
@@ -65,9 +65,6 @@ public class D4NManager : MonoBehaviour
                 else if (completeD4NTutorial)
                 {
                     animatorD4N.SetBool("D4NHeartReaction", true);
-                    //D4NDialogueText.text = "D4N: Hello, Magenta!";
-                    //dialogueBoxD4N.SetActive(true);
-                    //dialogueOnD4N = true;
                 }
             }
         }

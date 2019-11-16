@@ -1,6 +1,7 @@
 ﻿// Cattatonicat 2019 
 // For Domesticate Hell 
 // https://www.instagram.com/cattatonicat/
+// https://cattatonicat.tumblr.com/
 
 using System.Collections;
 using System.Collections.Generic;
@@ -20,6 +21,10 @@ public class CattatonicatManager : MonoBehaviour
     // Dialogue Box Text // 
     [SerializeField]
     private Text cattatonicatDialogueText = null;
+
+    [Header("Cattatonicat Voice")]
+    [SerializeField]
+    private AudioClip cattatonicatVoice = null;
 
     [Header("Store dé Hell Open & Close Sound Effects")]
 
@@ -91,6 +96,15 @@ public class CattatonicatManager : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if (playerInRange)
+            {
+                TurnOffStore();
+                PlayerController.PlayerAllowedToMove = true;
+            }
+        }
     }
 
     // Detect Player Enter & Exit State // 
@@ -118,7 +132,8 @@ public class CattatonicatManager : MonoBehaviour
         {
             // Tutorial Dialogue // 
             Debug.Log("Initiating Cattatonicat tutorial...");
-            cattatonicatDialogueText.text = "Cattatonicat: Hello, Magenta! I have 666 souls for you!";
+            storeAudioSource.PlayOneShot(cattatonicatVoice);
+            cattatonicatDialogueText.text = "Cattatonicat: Hello, new customer! Please accept this 666 souls as a gesture of good will from AfterLife Wellness.\nI recommend using the souls to help you purchase a ticket to fire habitat.";
             dialogueBoxCattatonicat.SetActive(true);
             GameManager.SoulCount += 666;
             Debug.Log("+ 666 souls");
